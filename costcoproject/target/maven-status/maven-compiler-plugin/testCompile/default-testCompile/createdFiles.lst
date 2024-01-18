@@ -1,1 +1,8 @@
-test\com\TestCase1.class
+test\com\ModifyingCartItems.class
+test\com\SectionInMeatSeaFoodPage.class
+test\com\PagesByCategoryinGrocery.class
+test\com\PagesByCategoryFilterInGrocery.class
+test\com\RemoveFromCart.class
+test\com\BestSellersInMeatSeaFoodSection.class
+test\com\RemoveFromCart2.class
+test\com\CheckingLinkToPhotoCategory.class
