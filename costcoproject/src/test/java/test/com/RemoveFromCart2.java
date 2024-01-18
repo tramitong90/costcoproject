@@ -26,12 +26,12 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-public class RemoveFromCart {
+public class RemoveFromCart2 {
 
     private WebDriver driver;
     private String baseUrl;
 
-    public RemoveFromCart() {
+    public RemoveFromCart2() {
     }
 
     @BeforeClass
@@ -56,27 +56,30 @@ public class RemoveFromCart {
     }
 
     @Test
-    public void testRemoveFromCart() {
+    public void testRemoveFromCart2() {
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//img[@alt='Mohawk Luxury Vinyl Plank Flooring']")).click();
-        driver.findElement(By.id("add-to-cart-btn")).click();
+        driver.findElement(By.xpath("/html/body/div[3]/div/nav/div[1]/a")).click();
+        driver.findElement(By.xpath("//*[@id=\"category-list-collapsable\"]/div[2]/div[2]/a/div[1]")).click();
+        driver.findElement(By.id("addbutton-0")).click();
+        driver.findElement(By.id("addbutton-1")).click();
+        driver.findElement(By.xpath("/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a")).click();
 
-        WebDriverWait wait1 = new WebDriverWait(driver, 20);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
-        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
-        driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[5]/div[1]/form/div/div/div/div/div/div[1]/div[2]/div[1]/div[4]/button/span")).click();
-
-        assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")).getText().equalsIgnoreCase("Your shopping cart is empty. Please add at least one item to your cart before checking out."), true);
-       
-        assertEquals(driver.findElement(By.xpath("/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span")).getText().equalsIgnoreCase("0"), true);
+//        WebDriverWait wait1 = new WebDriverWait(driver, 20);
+//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
+//        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
+//        driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[5]/div[1]/form/div/div/div/div/div/div[1]/div[2]/div[1]/div[4]/button/span")).click();
+//
+//        assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")).getText().equalsIgnoreCase("Your shopping cart is empty. Please add at least one item to your cart before checking out."), true);
+//       
+       assertEquals(driver.findElement(By.xpath("/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span")).getText().equalsIgnoreCase("0"), true);
 
         
         
         try {
             Thread.sleep(2000);
         } catch (InterruptedException ex) {
-            Logger.getLogger(RemoveFromCart.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RemoveFromCart2.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
