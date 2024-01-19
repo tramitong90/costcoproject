@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-01-19T16:31:23Z" name="test.com.AddToCart" finished-at="2024-01-19T16:31:46Z" duration-ms="22873">
+=======
+<<<<<<< HEAD
+  <suite started-at="2024-01-18T20:52:29Z" name="Surefire suite" finished-at="2024-01-18T20:52:47Z" duration-ms="18379">
+    <groups>
+    </groups>
+    <test started-at="2024-01-18T20:52:29Z" name="Surefire test" finished-at="2024-01-18T20:52:47Z" duration-ms="18379">
+      <class name="test.com.BestSellersInMeatSeaFoodSection">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:29Z" name="setUpClass" finished-at="2024-01-18T14:52:29Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:29Z" name="setUpMethod" finished-at="2024-01-18T14:52:37Z" duration-ms="7929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testItemDescription()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:37Z" name="testItemDescription" finished-at="2024-01-18T14:52:37Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testItemDescription -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:37Z" name="tearDownMethod" finished-at="2024-01-18T14:52:37Z" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:37Z" name="setUpMethod" finished-at="2024-01-18T14:52:42Z" duration-ms="5411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testSelectingItem()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:42Z" name="testSelectingItem" finished-at="2024-01-18T14:52:47Z" duration-ms="4685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectingItem -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:47Z" name="tearDownMethod" finished-at="2024-01-18T14:52:47Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSection@588df31b]" started-at="2024-01-18T14:52:47Z" name="tearDownClass" finished-at="2024-01-18T14:52:47Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.BestSellersInMeatSeaFoodSection -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+=======
+  <suite started-at="2024-01-18T18:09:48Z" name="test.com.EmptyCartCheckout" finished-at="2024-01-18T18:10:49Z" duration-ms="61657">
+>>>>>>> 43431e1b8e2afd13f2cd01457fbe77bd54e060c5
     <groups>
     </groups>
     <test started-at="2024-01-19T16:31:23Z" name="Command line test" finished-at="2024-01-19T16:31:46Z" duration-ms="22873">
@@ -29,5 +75,10 @@
         </test-method> <!-- tearDownClass -->
       </class> <!-- test.com.AddToCart -->
     </test> <!-- Command line test -->
+<<<<<<< HEAD
   </suite> <!-- test.com.AddToCart -->
+=======
+  </suite> <!-- test.com.EmptyCartCheckout -->
+>>>>>>> 03072accd682efb1679c1066cfe1e2a865d246ed
+>>>>>>> 43431e1b8e2afd13f2cd01457fbe77bd54e060c5
 </testng-results>
