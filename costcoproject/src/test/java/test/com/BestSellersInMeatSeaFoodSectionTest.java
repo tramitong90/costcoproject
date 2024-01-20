@@ -49,6 +49,7 @@ public class BestSellersInMeatSeaFoodSectionTest {
         baseUrl = "https://www.google.com/";
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://www.costco.com/meat.html");
+        driver.manage().window().maximize();
     }
 
     @AfterMethod
