@@ -23,12 +23,12 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-public class ListOfProductInMeatSeafood {
+public class ListOfProductInMeatSeafoodTest {
 
     private WebDriver driver;
     private String baseUrl;
 
-    public ListOfProductInMeatSeafood() {
+    public ListOfProductInMeatSeafoodTest() {
     }
 
     // TODO add test methods here.
@@ -49,7 +49,7 @@ public class ListOfProductInMeatSeafood {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://www.costco.com/meat.html");
         driver.manage().window().maximize();
     }
