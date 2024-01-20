@@ -2,7 +2,15 @@
 <testng-results total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-01-20T02:07:36Z" name="Surefire suite" finished-at="2024-01-20T02:07:42Z" duration-ms="6124">
+=======
+<<<<<<< HEAD
+  <suite started-at="2024-01-19T16:31:23Z" name="test.com.AddToCart" finished-at="2024-01-19T16:31:46Z" duration-ms="22873">
+=======
+<<<<<<< HEAD
+  <suite started-at="2024-01-18T20:52:29Z" name="Surefire suite" finished-at="2024-01-18T20:52:47Z" duration-ms="18379">
+>>>>>>> a32d5d021f852ee27c40bd438e354be2938c9e8d
     <groups>
     </groups>
     <test started-at="2024-01-20T02:07:36Z" name="Surefire test" finished-at="2024-01-20T02:07:42Z" duration-ms="6124">
@@ -91,4 +99,42 @@ Session ID: cdbd7a5504448286b5ce033adce8cbb4
       </class> <!-- test.com.ListOfProductInMeatSeafood -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
+<<<<<<< HEAD
+=======
+=======
+  <suite started-at="2024-01-18T18:09:48Z" name="test.com.EmptyCartCheckout" finished-at="2024-01-18T18:10:49Z" duration-ms="61657">
+>>>>>>> 43431e1b8e2afd13f2cd01457fbe77bd54e060c5
+    <groups>
+    </groups>
+    <test started-at="2024-01-19T16:31:23Z" name="Command line test" finished-at="2024-01-19T16:31:46Z" duration-ms="22873">
+      <class name="test.com.AddToCart">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.AddToCart@5bb21b69]" started-at="2024-01-19T17:31:23Z" name="setUpClass" finished-at="2024-01-19T17:31:23Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.AddToCart@5bb21b69]" started-at="2024-01-19T17:31:23Z" name="setUpMethod" finished-at="2024-01-19T17:31:29Z" duration-ms="5394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testCase1()[pri:0, instance:test.com.AddToCart@5bb21b69]" started-at="2024-01-19T17:31:29Z" name="testCase1" finished-at="2024-01-19T17:31:46Z" duration-ms="17302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.AddToCart@5bb21b69]" started-at="2024-01-19T17:31:46Z" name="tearDownMethod" finished-at="2024-01-19T17:31:46Z" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.AddToCart@5bb21b69]" started-at="2024-01-19T17:31:46Z" name="tearDownClass" finished-at="2024-01-19T17:31:46Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.AddToCart -->
+    </test> <!-- Command line test -->
+<<<<<<< HEAD
+  </suite> <!-- test.com.AddToCart -->
+=======
+  </suite> <!-- test.com.EmptyCartCheckout -->
+>>>>>>> 03072accd682efb1679c1066cfe1e2a865d246ed
+>>>>>>> 43431e1b8e2afd13f2cd01457fbe77bd54e060c5
+>>>>>>> a32d5d021f852ee27c40bd438e354be2938c9e8d
 </testng-results>
