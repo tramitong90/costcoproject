@@ -21,11 +21,12 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-public class SectionInMeatSeaFoodPage {
+public class PagesByCategoryFilterInGroceryTest {
+
     private WebDriver driver;
     private String baseUrl;
-    
-    public SectionInMeatSeaFoodPage() {
+
+    public PagesByCategoryFilterInGroceryTest() {
     }
 
     // TODO add test methods here.
@@ -33,7 +34,6 @@ public class SectionInMeatSeaFoodPage {
     //
     // @Test
     // public void hello() {}
-
     @BeforeClass
     public static void setUpClass() throws Exception {
     }
@@ -44,6 +44,7 @@ public class SectionInMeatSeaFoodPage {
 
     @BeforeMethod
     public void setUpMethod() throws Exception {
+
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
@@ -51,7 +52,7 @@ public class SectionInMeatSeaFoodPage {
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
         driver.findElement(By.id("Home_Ancillary_0")).click();
-        WebDriverWait wait1 = new WebDriverWait(driver, 20);
+        WebDriverWait wait1 =new WebDriverWait(driver, 20);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
         driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
     }
@@ -60,12 +61,48 @@ public class SectionInMeatSeaFoodPage {
     public void tearDownMethod() throws Exception {
         driver.close();
     }
-    
+
     @Test
     public void testBeefPage() throws Exception {
-        assertEquals(driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[1]/div/h2")).getText().contains("Shop By Category"), true);
-        assertEquals(driver.findElement(By.xpath("//*[@id=\"aopt-rcmd-tt515356\"]/div[1]")).getText().contains("Best Sellers In Meat & Seafood"), true);
-        //assertEquals(driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[6]/div[3]/div[2]/div/ctl:cache/div/div[2]/div/div[6]/span")).getText().contains("Showing 1-24 of 149"), true);
         
+        driver.findElement(By.xpath("//div[@id='accordion-filter_collapse-2']/div/div[4]/a/label")).click();
+        
+        assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Beef"), true);
     }
+
+    @Test
+    public void testLambPage() throws Exception {
+        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[5]/a/label")).click();
+        
+        assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Lamb"), true);
+    }
+    
+    @Test
+    public void testPlantBasedProteinPage() throws Exception {
+        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[6]/a/label")).click();
+        
+        assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Plant Based Protein"), true);
+    }
+    
+    @Test
+    public void testPorkPage() throws Exception {
+        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[7]/a/label")).click();
+        
+        assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Pork"), true);
+    }
+    
+    @Test
+    public void testPoultryPage() throws Exception {
+        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[8]/a/label")).click();
+        
+        assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Poultry"), true);
+    }
+    
+    @Test
+    public void testSeaFoodPage() throws Exception {
+        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[9]/a/label")).click();
+        
+        assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Seafood"), true);
+    }
+    
 }

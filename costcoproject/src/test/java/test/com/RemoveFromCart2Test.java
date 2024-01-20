@@ -26,12 +26,12 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-public class RemoveFromCart2 {
+public class RemoveFromCart2Test {
 
     private WebDriver driver;
     private String baseUrl;
 
-    public RemoveFromCart2() {
+    public RemoveFromCart2Test() {
     }
 
     @BeforeClass
@@ -79,7 +79,7 @@ public class RemoveFromCart2 {
         try {
             Thread.sleep(2000);
         } catch (InterruptedException ex) {
-            Logger.getLogger(RemoveFromCart2.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RemoveFromCart2Test.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

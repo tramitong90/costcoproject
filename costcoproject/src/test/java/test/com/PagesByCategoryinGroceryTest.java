@@ -21,12 +21,12 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-public class PagesByCategoryFilterInGrocery {
+public class PagesByCategoryinGroceryTest {
 
     private WebDriver driver;
     private String baseUrl;
 
-    public PagesByCategoryFilterInGrocery() {
+    public PagesByCategoryinGroceryTest() {
     }
 
     // TODO add test methods here.
@@ -44,7 +44,6 @@ public class PagesByCategoryFilterInGrocery {
 
     @BeforeMethod
     public void setUpMethod() throws Exception {
-
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
@@ -52,7 +51,7 @@ public class PagesByCategoryFilterInGrocery {
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
         driver.findElement(By.id("Home_Ancillary_0")).click();
-        WebDriverWait wait1 =new WebDriverWait(driver, 20);
+        WebDriverWait wait1 = new WebDriverWait(driver, 20);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
         driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
     }
@@ -65,42 +64,48 @@ public class PagesByCategoryFilterInGrocery {
     @Test
     public void testBeefPage() throws Exception {
         
-        driver.findElement(By.xpath("//div[@id='accordion-filter_collapse-2']/div/div[4]/a/label")).click();
-        
+        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/beef.jpg')]")).click();
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Beef"), true);
+        
     }
-
+    
     @Test
     public void testLambPage() throws Exception {
-        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[5]/a/label")).click();
-        
+        driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[6]/a/div/div/div/img")).click();
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Lamb"), true);
     }
     
     @Test
     public void testPlantBasedProteinPage() throws Exception {
-        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[6]/a/label")).click();
+        driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[17]/a/div/div/div/img")).click();
         
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Plant Based Protein"), true);
     }
     
     @Test
     public void testPorkPage() throws Exception {
-        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[7]/a/label")).click();
+        driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[3]/a/div/div/div/img")).click();
         
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Pork"), true);
     }
     
     @Test
     public void testPoultryPage() throws Exception {
-        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[8]/a/label")).click();
+        driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[8]/a/div/div/div/img")).click();
         
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Poultry"), true);
     }
     
     @Test
     public void testSeaFoodPage() throws Exception {
-        driver.findElement(By.xpath("//*[@id=\"accordion-filter_collapse-2\"]/div/div[9]/a/label")).click();
+        driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[12]/a/div/div/div/img")).click();
+        
+        assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Seafood"), true);
+    }
+    
+    @Test
+    public void testGameMeatPage() throws Exception {
+        driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[14]/a/div/div/div/img")).click();
         
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Seafood"), true);
     }

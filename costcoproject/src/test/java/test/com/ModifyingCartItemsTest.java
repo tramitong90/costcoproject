@@ -5,11 +5,13 @@
 package test.com;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -21,12 +23,12 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-public class CheckingLinkToPhotoCategory {
+public class ModifyingCartItemsTest {
 
     private WebDriver driver;
     private String baseUrl;
 
-    public CheckingLinkToPhotoCategory() {
+    public ModifyingCartItemsTest() {
     }
 
     // TODO add test methods here.
@@ -52,24 +54,21 @@ public class CheckingLinkToPhotoCategory {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.quit();
-        
-    }
-    
-    @Test
-    public void testCheckingLinkToPhotoCategory() {//*[@id="crumbs_ul"]/li[2]/span
-        driver.get("https://www.costco.com/");
-        driver.manage().window().maximize();
-        driver.findElement(By.xpath("//*[@id=\"navigation-widget\"]/div/nav/div[8]/a")).click();
-    
-        assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div/div[1]/div/ol/li[2]/span")).getText().contains("Photo"), true);
-        
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(CheckingLinkToPhotoCategory.class.getName()).log(Level.SEVERE, null, ex);
-        }
         driver.close();
+    }
+
+    @Test
+    public void testModifyingCartItems() throws Exception {
+        driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");
+        driver.manage().window().maximize();
+        driver.findElement(By.id("add-to-cart-btn")).click();
+        
+        WebDriverWait wait1 =new WebDriverWait(driver, 20);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
+        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
+       
+        driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=Ohir3LGY423kfUG7b%2FHCDrX7AF9s3LKBmOjoSd0ZJ3PW6w%2Bxh2pOgY%2BsEye6eBOga7DNu%2FDVBVrx%2FRof6txRySZ1MSxvbfWVo7cd1p9TM6U%3D&ddkey=http%3ACheckoutCartView");
+        driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
     }
 
 }

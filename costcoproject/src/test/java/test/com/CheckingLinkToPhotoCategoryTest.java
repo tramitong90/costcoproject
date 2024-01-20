@@ -5,11 +5,11 @@
 package test.com;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -21,12 +21,12 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-public class BestSellersInMeatSeaFoodSection {
+public class CheckingLinkToPhotoCategoryTest {
 
     private WebDriver driver;
     private String baseUrl;
 
-    public BestSellersInMeatSeaFoodSection() {
+    public CheckingLinkToPhotoCategoryTest() {
     }
 
     // TODO add test methods here.
@@ -48,27 +48,28 @@ public class BestSellersInMeatSeaFoodSection {
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("https://www.costco.com/meat.html");
     }
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.close();
-    }
-
-    @Test
-    public void testSelectingItem() throws Exception {
-   
-        driver.findElement(By.id("image0")).click();
-        driver.get("https://www.costco.com/.product.100393370.html");
-        assertEquals(driver.findElement(By.xpath("//*[@id=\"product-details\"]/div[1]/div/div[1]/h1")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
+        driver.quit();
+        
     }
     
     @Test
-    public void testItemDescription() throws Exception {
-   
-        //driver.findElement(By.id("image0"));
-        assertEquals(driver.findElement(By.xpath("//*[@id=\"slick-slide00\"]/div/p")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
+    public void testCheckingLinkToPhotoCategory() {//*[@id="crumbs_ul"]/li[2]/span
+        driver.get("https://www.costco.com/");
+        driver.manage().window().maximize();
+        driver.findElement(By.xpath("//*[@id=\"navigation-widget\"]/div/nav/div[8]/a")).click();
+    
+        assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div/div[1]/div/ol/li[2]/span")).getText().contains("Photo"), true);
+        
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(CheckingLinkToPhotoCategoryTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        driver.close();
     }
 
 }

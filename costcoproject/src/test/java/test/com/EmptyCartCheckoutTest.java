@@ -20,10 +20,10 @@ import org.testng.annotations.Test;
  *
  * @author pahan
  */
-public class EmptyCartCheckout {
+public class EmptyCartCheckoutTest {
   private WebDriver driver;
   private String baseUrl;
-    public EmptyCartCheckout() {
+    public EmptyCartCheckoutTest() {
     }
 
     // TODO add test methods here.
