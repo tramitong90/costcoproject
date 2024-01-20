@@ -22,12 +22,12 @@ import org.testng.annotations.Test;
  *
  * @author SK
  */
-public class AddToCart {
+public class AddToCartTest {
     
      private WebDriver driver;
   private String baseUrl;
   
-    public AddToCart() {
+    public AddToCartTest() {
     }
 
     // TODO add test methods here.
