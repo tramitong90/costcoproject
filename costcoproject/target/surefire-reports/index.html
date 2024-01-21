@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">24 methods, 3 failed,  7 skipped,  14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.ListOfProductInMeatSeafoodTest" class="method navigator-link" hash-for-method="testAddToListButton">testAddToListButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.RemoveFromCartTest" class="method navigator-link" hash-for-method="testRemoveFromCart">testRemoveFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.RemoveFromCart2Test" class="method navigator-link" hash-for-method="testRemoveFromCart2">testRemoveFromCart2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryFilterInGroceryTest" class="method navigator-link" hash-for-method="testBeefPage">testBeefPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.EmptyCartCheckoutTest" class="method navigator-link" hash-for-method="testCart">testCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryFilterInGroceryTest" class="method navigator-link" hash-for-method="testLambPage">testLambPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryFilterInGroceryTest" class="method navigator-link" hash-for-method="testPlantBasedProteinPage">testPlantBasedProteinPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryFilterInGroceryTest" class="method navigator-link" hash-for-method="testPorkPage">testPorkPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryFilterInGroceryTest" class="method navigator-link" hash-for-method="testPoultryPage">testPoultryPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryFilterInGroceryTest" class="method navigator-link" hash-for-method="testSeaFoodPage">testSeaFoodPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +169,72 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryinGroceryTest" class="method navigator-link" hash-for-method="testBeefPage">testBeefPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="test.com.SectionInMeatSeaFoodPageTest" class="method navigator-link" hash-for-method="testBeefPage">testBeefPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.AddToCartTest" class="method navigator-link" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.CheckingLinkToPhotoCategoryTest" class="method navigator-link" hash-for-method="testCheckingLinkToPhotoCategory">testCheckingLinkToPhotoCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryinGroceryTest" class="method navigator-link" hash-for-method="testGameMeatPage">testGameMeatPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.BestSellersInMeatSeaFoodSectionTest" class="method navigator-link" hash-for-method="testItemDescription">testItemDescription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryinGroceryTest" class="method navigator-link" hash-for-method="testLambPage">testLambPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.ModifyingCartItemsTest" class="method navigator-link" hash-for-method="testModifyingCartItems">testModifyingCartItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryinGroceryTest" class="method navigator-link" hash-for-method="testPlantBasedProteinPage">testPlantBasedProteinPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryinGroceryTest" class="method navigator-link" hash-for-method="testPorkPage">testPorkPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryinGroceryTest" class="method navigator-link" hash-for-method="testPoultryPage">testPoultryPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.PagesByCategoryinGroceryTest" class="method navigator-link" hash-for-method="testSeaFoodPage">testSeaFoodPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.ListOfProductInMeatSeafoodTest" class="method navigator-link" hash-for-method="testSelectingItem">testSelectingItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.BestSellersInMeatSeaFoodSectionTest" class="method navigator-link" hash-for-method="testSelectingItem">testSelectingItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -116,6 +249,201 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.com.RemoveFromCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFromCart">
+                  </a> <!-- testRemoveFromCart -->
+                  <span class="method-name">testRemoveFromCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@alt=&apos;Mohawk Luxury Vinyl Plank Flooring&apos;]&quot;}
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-37HMM6Q&apos;, ip: &apos;192.168.50.219&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20127e21a60d5d4082dadd4434db745c
+*** Element info: {Using=xpath, value=//img[@alt=&apos;Mohawk Luxury Vinyl Plank Flooring&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at test.com.RemoveFromCartTest.testRemoveFromCart(RemoveFromCartTest.java:62)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.com.ListOfProductInMeatSeafoodTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToListButton">
+                  </a> <!-- testAddToListButton -->
+                  <span class="method-name">testAddToListButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sign In] but found [Sign In | Costco]
+	at test.com.ListOfProductInMeatSeafoodTest.testAddToListButton(ListOfProductInMeatSeafoodTest.java:67)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.com.RemoveFromCart2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFromCart2">
+                  </a> <!-- testRemoveFromCart2 -->
+                  <span class="method-name">testRemoveFromCart2</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span&quot;}
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-37HMM6Q&apos;, ip: &apos;192.168.50.219&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 376cf3f8620b134c41aa54b5058e9ba3
+*** Element info: {Using=xpath, value=/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at test.com.RemoveFromCart2Test.testRemoveFromCart2(RemoveFromCart2Test.java:75)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.com.EmptyCartCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCart">
+                  </a> <!-- testCart -->
+                  <span class="method-name">testCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">test.com.PagesByCategoryFilterInGroceryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBeefPage">
+                  </a> <!-- testBeefPage -->
+                  <span class="method-name">testBeefPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLambPage">
+                  </a> <!-- testLambPage -->
+                  <span class="method-name">testLambPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlantBasedProteinPage">
+                  </a> <!-- testPlantBasedProteinPage -->
+                  <span class="method-name">testPlantBasedProteinPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPorkPage">
+                  </a> <!-- testPorkPage -->
+                  <span class="method-name">testPorkPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPoultryPage">
+                  </a> <!-- testPoultryPage -->
+                  <span class="method-name">testPoultryPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSeaFoodPage">
+                  </a> <!-- testSeaFoodPage -->
+                  <span class="method-name">testSeaFoodPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.com.BestSellersInMeatSeaFoodSectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testItemDescription">
+                  </a> <!-- testItemDescription -->
+                  <span class="method-name">testItemDescription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectingItem">
+                  </a> <!-- testSelectingItem -->
+                  <span class="method-name">testSelectingItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.com.ModifyingCartItemsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testModifyingCartItems">
+                  </a> <!-- testModifyingCartItems -->
+                  <span class="method-name">testModifyingCartItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,6 +459,108 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.com.CheckingLinkToPhotoCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckingLinkToPhotoCategory">
+                  </a> <!-- testCheckingLinkToPhotoCategory -->
+                  <span class="method-name">testCheckingLinkToPhotoCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.com.AddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.com.PagesByCategoryinGroceryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBeefPage">
+                  </a> <!-- testBeefPage -->
+                  <span class="method-name">testBeefPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGameMeatPage">
+                  </a> <!-- testGameMeatPage -->
+                  <span class="method-name">testGameMeatPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLambPage">
+                  </a> <!-- testLambPage -->
+                  <span class="method-name">testLambPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlantBasedProteinPage">
+                  </a> <!-- testPlantBasedProteinPage -->
+                  <span class="method-name">testPlantBasedProteinPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPorkPage">
+                  </a> <!-- testPorkPage -->
+                  <span class="method-name">testPorkPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPoultryPage">
+                  </a> <!-- testPoultryPage -->
+                  <span class="method-name">testPoultryPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSeaFoodPage">
+                  </a> <!-- testSeaFoodPage -->
+                  <span class="method-name">testSeaFoodPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.com.ListOfProductInMeatSeafoodTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectingItem">
+                  </a> <!-- testSelectingItem -->
+                  <span class="method-name">testSelectingItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -142,6 +572,16 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test name=&quot;Surefire test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;test.com.AddToCartTest&quot;/&gt;
+      &lt;class name=&quot;test.com.BestSellersInMeatSeaFoodSectionTest&quot;/&gt;
+      &lt;class name=&quot;test.com.CheckingLinkToPhotoCategoryTest&quot;/&gt;
+      &lt;class name=&quot;test.com.EmptyCartCheckoutTest&quot;/&gt;
+      &lt;class name=&quot;test.com.ListOfProductInMeatSeafoodTest&quot;/&gt;
+      &lt;class name=&quot;test.com.ModifyingCartItemsTest&quot;/&gt;
+      &lt;class name=&quot;test.com.PagesByCategoryFilterInGroceryTest&quot;/&gt;
+      &lt;class name=&quot;test.com.PagesByCategoryinGroceryTest&quot;/&gt;
+      &lt;class name=&quot;test.com.RemoveFromCart2Test&quot;/&gt;
+      &lt;class name=&quot;test.com.RemoveFromCartTest&quot;/&gt;
       &lt;class name=&quot;test.com.SectionInMeatSeaFoodPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
@@ -156,7 +596,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (11 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,16 +622,108 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testBeefPage')
-data.setCell(0, 2, 'test.com.SectionInMeatSeaFoodPageTest')
-data.setCell(0, 3, 189);
+data.setCell(0, 1, 'testModifyingCartItems')
+data.setCell(0, 2, 'test.com.ModifyingCartItemsTest')
+data.setCell(0, 3, 21379);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddToListButton')
+data.setCell(1, 2, 'test.com.ListOfProductInMeatSeafoodTest')
+data.setCell(1, 3, 18969);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCase1')
+data.setCell(2, 2, 'test.com.AddToCartTest')
+data.setCell(2, 3, 15195);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testRemoveFromCart2')
+data.setCell(3, 2, 'test.com.RemoveFromCart2Test')
+data.setCell(3, 3, 14611);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testRemoveFromCart')
+data.setCell(4, 2, 'test.com.RemoveFromCartTest')
+data.setCell(4, 3, 9469);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCheckingLinkToPhotoCategory')
+data.setCell(5, 2, 'test.com.CheckingLinkToPhotoCategoryTest')
+data.setCell(5, 3, 7989);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSelectingItem')
+data.setCell(6, 2, 'test.com.BestSellersInMeatSeaFoodSectionTest')
+data.setCell(6, 3, 5171);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSelectingItem')
+data.setCell(7, 2, 'test.com.ListOfProductInMeatSeafoodTest')
+data.setCell(7, 3, 4806);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testPorkPage')
+data.setCell(8, 2, 'test.com.PagesByCategoryinGroceryTest')
+data.setCell(8, 3, 2567);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSeaFoodPage')
+data.setCell(9, 2, 'test.com.PagesByCategoryinGroceryTest')
+data.setCell(9, 3, 1987);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testBeefPage')
+data.setCell(10, 2, 'test.com.PagesByCategoryinGroceryTest')
+data.setCell(10, 3, 1770);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testPoultryPage')
+data.setCell(11, 2, 'test.com.PagesByCategoryinGroceryTest')
+data.setCell(11, 3, 1728);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPlantBasedProteinPage')
+data.setCell(12, 2, 'test.com.PagesByCategoryinGroceryTest')
+data.setCell(12, 3, 1615);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testGameMeatPage')
+data.setCell(13, 2, 'test.com.PagesByCategoryinGroceryTest')
+data.setCell(13, 3, 1503);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLambPage')
+data.setCell(14, 2, 'test.com.PagesByCategoryinGroceryTest')
+data.setCell(14, 3, 1467);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testItemDescription')
+data.setCell(15, 2, 'test.com.BestSellersInMeatSeaFoodSectionTest')
+data.setCell(15, 3, 140);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testBeefPage')
+data.setCell(16, 2, 'test.com.SectionInMeatSeaFoodPageTest')
+data.setCell(16, 3, 126);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testLambPage')
+data.setCell(17, 2, 'test.com.PagesByCategoryFilterInGroceryTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testSeaFoodPage')
+data.setCell(18, 2, 'test.com.PagesByCategoryFilterInGroceryTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testPoultryPage')
+data.setCell(19, 2, 'test.com.PagesByCategoryFilterInGroceryTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testBeefPage')
+data.setCell(20, 2, 'test.com.PagesByCategoryFilterInGroceryTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testPorkPage')
+data.setCell(21, 2, 'test.com.PagesByCategoryFilterInGroceryTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testCart')
+data.setCell(22, 2, 'test.com.EmptyCartCheckoutTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testPlantBasedProteinPage')
+data.setCell(23, 2, 'test.com.PagesByCategoryFilterInGroceryTest')
+data.setCell(23, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 189 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -217,26 +749,366 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.com.SectionInMeatSeaFoodPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.com.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testBeefPage</span>
-                <span class="method-start">8725 ms</span>
+                <span class="method-name">testCase1</span>
+                <span class="method-start">1411 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod</span>
-                <span class="method-start">8914 ms</span>
+                <span class="method-start">16607 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">9055 ms</span>
+                <span class="method-start">16718 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.BestSellersInMeatSeaFoodSectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">16721 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">16722 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testItemDescription</span>
+                <span class="method-start">22626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">22767 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">22917 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSelectingItem</span>
+                <span class="method-start">28667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">33838 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">33984 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.CheckingLinkToPhotoCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">33985 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">33987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCheckingLinkToPhotoCategory</span>
+                <span class="method-start">34714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">42703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">42850 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.EmptyCartCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">42851 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">42851 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCart</span>
+                <span class="method-start">42858 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.ListOfProductInMeatSeafoodTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">42859 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">42859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddToListButton</span>
+                <span class="method-start">48499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">67470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">67627 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSelectingItem</span>
+                <span class="method-start">73237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">78043 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">78724 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.ModifyingCartItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">78725 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">78725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testModifyingCartItems</span>
+                <span class="method-start">79493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">100872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">101060 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.PagesByCategoryFilterInGroceryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">101061 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">101061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBeefPage</span>
+                <span class="method-start">127440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLambPage</span>
+                <span class="method-start">127440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPlantBasedProteinPage</span>
+                <span class="method-start">127442 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPorkPage</span>
+                <span class="method-start">127443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPoultryPage</span>
+                <span class="method-start">127443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSeaFoodPage</span>
+                <span class="method-start">127444 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.PagesByCategoryinGroceryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">127445 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">127446 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBeefPage</span>
+                <span class="method-start">135170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">136940 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">137041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGameMeatPage</span>
+                <span class="method-start">144927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">146430 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">146558 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLambPage</span>
+                <span class="method-start">154593 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">156060 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">156193 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPlantBasedProteinPage</span>
+                <span class="method-start">164014 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">165629 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">165775 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPorkPage</span>
+                <span class="method-start">173513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">176080 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">176208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPoultryPage</span>
+                <span class="method-start">186544 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">188273 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">188386 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSeaFoodPage</span>
+                <span class="method-start">196913 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">198900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">199028 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.RemoveFromCart2Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">199028 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">199029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRemoveFromCart2</span>
+                <span class="method-start">199802 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">214414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">214816 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.RemoveFromCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">214816 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">214816 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRemoveFromCart</span>
+                <span class="method-start">215558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">225028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">225268 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.com.SectionInMeatSeaFoodPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">225268 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">225268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBeefPage</span>
+                <span class="method-start">234107 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">234234 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">234380 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,8 +4,8 @@ test\com\RemoveFromCart2Test.class
 test\com\BestSellersInMeatSeaFoodSectionTest.class
 test\com\PagesByCategoryFilterInGroceryTest.class
 test\com\CheckingLinkToPhotoCategoryTest.class
-test\com\ListOfProductInMeatSeafood.class
 test\com\AddToCartTest.class
+test\com\ListOfProductInMeatSeafoodTest.class
 test\com\SectionInMeatSeaFoodPageTest.class
 test\com\EmptyCartCheckoutTest.class
 test\com\PagesByCategoryinGroceryTest.class
