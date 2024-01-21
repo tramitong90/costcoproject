@@ -47,7 +47,7 @@ public class PagesByCategoryinGroceryTest {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
         driver.findElement(By.id("Home_Ancillary_0")).click();
