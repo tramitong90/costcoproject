@@ -42,13 +42,15 @@ public class EmptyCartCheckout {
 
     @BeforeMethod
     public void setUpMethod() throws Exception {
-    System.setProperty("webdriver.chrome.driver", "c:\\data1\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
     driver = new ChromeDriver();
     }
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
+         driver.close();
     }
+    
      @Test
   public void testCart() throws Exception {
    
