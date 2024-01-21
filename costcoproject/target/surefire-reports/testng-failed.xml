@@ -1,17 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Surefire suite]" verbose="0">
-  <test name="Surefire test(failed)">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test name="Command line test(failed)">
     <classes>
+      <class name="test.com.PagesByCategoryinGroceryTest">
+        <methods>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- test.com.PagesByCategoryinGroceryTest -->
       <class name="test.com.RemoveFromCartTest">
         <methods>
           <include name="tearDownMethod"/>
           <include name="tearDownClass"/>
-          <include name="testRemoveFromCart"/>
           <include name="setUpClass"/>
           <include name="setUpMethod"/>
         </methods>
       </class> <!-- test.com.RemoveFromCartTest -->
+      <class name="test.com.SectionInMeatSeaFoodPageTest">
+        <methods>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
+      <class name="test.com.CheckingLinkToPhotoCategoryTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
+      <class name="test.com.EmptyCartCheckoutTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- test.com.EmptyCartCheckoutTest -->
+      <class name="test.com.AddToCartTest">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- test.com.AddToCartTest -->
+      <class name="test.com.ModifyingCartItemsTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- test.com.ModifyingCartItemsTest -->
+      <class name="test.com.BestSellersInMeatSeaFoodSectionTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- test.com.BestSellersInMeatSeaFoodSectionTest -->
+      <class name="test.com.PagesByCategoryFilterInGroceryTest">
+        <methods>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="testPoultryPage"/>
+          <include name="testSeaFoodPage"/>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- test.com.PagesByCategoryFilterInGroceryTest -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

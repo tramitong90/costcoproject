@@ -59,7 +59,7 @@ public class RemoveFromCartTest {
     public void testRemoveFromCart() {
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//img[@alt='Mohawk Luxury Vinyl Plank Flooring']")).click();
+        driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div/div[5]/div[5]")).click();
         driver.findElement(By.id("add-to-cart-btn")).click();
 
         WebDriverWait wait1 = new WebDriverWait(driver, 20);

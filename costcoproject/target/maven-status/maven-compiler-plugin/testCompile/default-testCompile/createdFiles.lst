@@ -1,6 +1,5 @@
 test\com\ModifyingCartItemsTest.class
 test\com\RemoveFromCartTest.class
-test\com\RemoveFromCart2Test.class
 test\com\BestSellersInMeatSeaFoodSectionTest.class
 test\com\PagesByCategoryFilterInGroceryTest.class
 test\com\CheckingLinkToPhotoCategoryTest.class

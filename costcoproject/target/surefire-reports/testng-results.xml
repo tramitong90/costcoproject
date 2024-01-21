@@ -1,33 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-20T21:00:27Z" name="Surefire suite" finished-at="2024-01-20T21:00:36Z" duration-ms="9061">
+  <suite started-at="2024-01-21T17:08:53Z" name="Command line suite" finished-at="2024-01-21T17:17:15Z" duration-ms="502197">
     <groups>
     </groups>
-    <test started-at="2024-01-20T21:00:27Z" name="Surefire test" finished-at="2024-01-20T21:00:36Z" duration-ms="9061">
-      <class name="test.com.SectionInMeatSeaFoodPageTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-20T15:00:27Z" name="setUpClass" finished-at="2024-01-20T15:00:27Z" duration-ms="8" status="PASS">
+    <test started-at="2024-01-21T17:08:53Z" name="Command line test" finished-at="2024-01-21T17:17:15Z" duration-ms="502197">
+      <class name="test.com.ModifyingCartItemsTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:10:39Z" name="setUpClass" finished-at="2024-01-21T12:10:39Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-20T15:00:27Z" name="setUpMethod" finished-at="2024-01-20T15:00:36Z" duration-ms="8712" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:10:39Z" name="setUpMethod" finished-at="2024-01-21T12:10:39Z" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-20T15:00:36Z" name="testBeefPage" finished-at="2024-01-20T15:00:36Z" duration-ms="189" status="PASS">
+        <test-method signature="testModifyingCartItems()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:10:39Z" name="testModifyingCartItems" finished-at="2024-01-21T12:12:02Z" duration-ms="82589" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-20T15:00:36Z" name="tearDownMethod" finished-at="2024-01-20T15:00:36Z" duration-ms="141" status="PASS">
+        </test-method> <!-- testModifyingCartItems -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:12:02Z" name="tearDownMethod" finished-at="2024-01-21T12:12:02Z" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-20T15:00:36Z" name="tearDownClass" finished-at="2024-01-20T15:00:36Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:12:02Z" name="tearDownClass" finished-at="2024-01-21T12:12:02Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.ModifyingCartItemsTest -->
+      <class name="test.com.BestSellersInMeatSeaFoodSectionTest">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:19Z" name="setUpMethod" finished-at="2024-01-21T12:09:27Z" duration-ms="8529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:19Z" name="setUpClass" finished-at="2024-01-21T12:09:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testItemDescription()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:27Z" name="testItemDescription" finished-at="2024-01-21T12:09:27Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testItemDescription -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:27Z" name="tearDownMethod" finished-at="2024-01-21T12:09:28Z" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:28Z" name="setUpMethod" finished-at="2024-01-21T12:09:39Z" duration-ms="10917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testSelectingItem()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:39Z" name="testSelectingItem" finished-at="2024-01-21T12:09:48Z" duration-ms="9514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectingItem -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:48Z" name="tearDownMethod" finished-at="2024-01-21T12:09:48Z" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:48Z" name="tearDownClass" finished-at="2024-01-21T12:09:48Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.BestSellersInMeatSeaFoodSectionTest -->
+      <class name="test.com.CheckingLinkToPhotoCategoryTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:09:48Z" name="setUpClass" finished-at="2024-01-21T12:09:48Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:09:48Z" name="setUpMethod" finished-at="2024-01-21T12:09:49Z" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testCheckingLinkToPhotoCategory()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:09:49Z" name="testCheckingLinkToPhotoCategory" finished-at="2024-01-21T12:10:05Z" duration-ms="16453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckingLinkToPhotoCategory -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:10:05Z" name="tearDownMethod" finished-at="2024-01-21T12:10:05Z" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:10:05Z" name="tearDownClass" finished-at="2024-01-21T12:10:05Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
+      <class name="test.com.AddToCartTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:08:53Z" name="setUpClass" finished-at="2024-01-21T12:08:53Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:08:53Z" name="setUpMethod" finished-at="2024-01-21T12:08:54Z" duration-ms="1532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testCase1()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:08:54Z" name="testCase1" finished-at="2024-01-21T12:09:19Z" duration-ms="24396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:09:19Z" name="tearDownMethod" finished-at="2024-01-21T12:09:19Z" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:09:19Z" name="tearDownClass" finished-at="2024-01-21T12:09:19Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.AddToCartTest -->
+      <class name="test.com.PagesByCategoryFilterInGroceryTest">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:02Z" name="setUpMethod" finished-at="2024-01-21T12:12:27Z" duration-ms="24766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:02Z" name="setUpClass" finished-at="2024-01-21T12:12:02Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testBeefPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:27Z" name="testBeefPage" finished-at="2024-01-21T12:12:29Z" duration-ms="2456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeefPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:29Z" name="tearDownMethod" finished-at="2024-01-21T12:12:30Z" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:30Z" name="setUpMethod" finished-at="2024-01-21T12:12:47Z" duration-ms="17472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testLambPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:47Z" name="testLambPage" finished-at="2024-01-21T12:12:49Z" duration-ms="1978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLambPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:49Z" name="tearDownMethod" finished-at="2024-01-21T12:12:49Z" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:49Z" name="setUpMethod" finished-at="2024-01-21T12:13:06Z" duration-ms="16870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testPlantBasedProteinPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:06Z" name="testPlantBasedProteinPage" finished-at="2024-01-21T12:13:09Z" duration-ms="3035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlantBasedProteinPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:09Z" name="tearDownMethod" finished-at="2024-01-21T12:13:09Z" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:09Z" name="setUpMethod" finished-at="2024-01-21T12:13:31Z" duration-ms="21545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testPorkPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:31Z" name="testPorkPage" finished-at="2024-01-21T12:13:33Z" duration-ms="1985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPorkPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:33Z" name="tearDownMethod" finished-at="2024-01-21T12:13:33Z" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:33Z" name="setUpMethod" finished-at="2024-01-21T12:13:51Z" duration-ms="17783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testPoultryPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:51Z" name="testPoultryPage" finished-at="2024-01-21T12:13:53Z" duration-ms="2352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPoultryPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:53Z" name="tearDownMethod" finished-at="2024-01-21T12:13:53Z" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:53Z" name="setUpMethod" finished-at="2024-01-21T12:14:11Z" duration-ms="18255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testSeaFoodPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:14:11Z" name="testSeaFoodPage" finished-at="2024-01-21T12:14:14Z" duration-ms="2887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeaFoodPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:14:14Z" name="tearDownMethod" finished-at="2024-01-21T12:14:14Z" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:14:14Z" name="tearDownClass" finished-at="2024-01-21T12:14:14Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.PagesByCategoryFilterInGroceryTest -->
+      <class name="test.com.PagesByCategoryinGroceryTest">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:14Z" name="setUpMethod" finished-at="2024-01-21T12:14:30Z" duration-ms="15507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:14Z" name="setUpClass" finished-at="2024-01-21T12:14:14Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="testBeefPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:30Z" name="testBeefPage" finished-at="2024-01-21T12:14:32Z" duration-ms="2098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeefPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:32Z" name="tearDownMethod" finished-at="2024-01-21T12:14:32Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:32Z" name="setUpMethod" finished-at="2024-01-21T12:14:46Z" duration-ms="14359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testGameMeatPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:46Z" name="testGameMeatPage" finished-at="2024-01-21T12:14:48Z" duration-ms="1933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGameMeatPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:48Z" name="tearDownMethod" finished-at="2024-01-21T12:14:48Z" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:48Z" name="setUpMethod" finished-at="2024-01-21T12:15:02Z" duration-ms="14092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testLambPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:02Z" name="testLambPage" finished-at="2024-01-21T12:15:04Z" duration-ms="1486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLambPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:04Z" name="tearDownMethod" finished-at="2024-01-21T12:15:04Z" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:04Z" name="setUpMethod" finished-at="2024-01-21T12:15:21Z" duration-ms="17233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testPlantBasedProteinPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:21Z" name="testPlantBasedProteinPage" finished-at="2024-01-21T12:15:23Z" duration-ms="1441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlantBasedProteinPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:23Z" name="tearDownMethod" finished-at="2024-01-21T12:15:23Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:23Z" name="setUpMethod" finished-at="2024-01-21T12:15:40Z" duration-ms="17017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testPorkPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:40Z" name="testPorkPage" finished-at="2024-01-21T12:15:42Z" duration-ms="1793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPorkPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:42Z" name="tearDownMethod" finished-at="2024-01-21T12:15:42Z" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:42Z" name="setUpMethod" finished-at="2024-01-21T12:15:57Z" duration-ms="15529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testPoultryPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:57Z" name="testPoultryPage" finished-at="2024-01-21T12:15:59Z" duration-ms="1648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPoultryPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:59Z" name="tearDownMethod" finished-at="2024-01-21T12:15:59Z" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:59Z" name="setUpMethod" finished-at="2024-01-21T12:16:17Z" duration-ms="17826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testSeaFoodPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:16:17Z" name="testSeaFoodPage" finished-at="2024-01-21T12:16:19Z" duration-ms="2261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeaFoodPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:16:19Z" name="tearDownMethod" finished-at="2024-01-21T12:16:19Z" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:16:19Z" name="tearDownClass" finished-at="2024-01-21T12:16:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.PagesByCategoryinGroceryTest -->
+      <class name="test.com.EmptyCartCheckoutTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:05Z" name="setUpClass" finished-at="2024-01-21T12:10:05Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:05Z" name="setUpMethod" finished-at="2024-01-21T12:10:06Z" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testCart()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:06Z" name="testCart" finished-at="2024-01-21T12:10:39Z" duration-ms="32521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCart -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:39Z" name="tearDownClass" finished-at="2024-01-21T12:10:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:39Z" name="tearDownMethod" finished-at="2024-01-21T12:10:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- test.com.EmptyCartCheckoutTest -->
+      <class name="test.com.SectionInMeatSeaFoodPageTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:00Z" name="setUpClass" finished-at="2024-01-21T12:17:00Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:00Z" name="setUpMethod" finished-at="2024-01-21T12:17:15Z" duration-ms="15270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testBeefPage()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:15Z" name="testBeefPage" finished-at="2024-01-21T12:17:15Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeefPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:15Z" name="tearDownMethod" finished-at="2024-01-21T12:17:15Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:15Z" name="tearDownClass" finished-at="2024-01-21T12:17:15Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+      <class name="test.com.RemoveFromCartTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:19Z" name="setUpClass" finished-at="2024-01-21T12:16:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:19Z" name="setUpMethod" finished-at="2024-01-21T12:16:20Z" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testRemoveFromCart()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:20Z" name="testRemoveFromCart" finished-at="2024-01-21T12:16:59Z" duration-ms="39390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFromCart -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:59Z" name="tearDownMethod" finished-at="2024-01-21T12:17:00Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:17:00Z" name="tearDownClass" finished-at="2024-01-21T12:17:00Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.RemoveFromCartTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
 </testng-results>
