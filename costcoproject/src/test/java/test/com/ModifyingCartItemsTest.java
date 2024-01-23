@@ -61,7 +61,7 @@ public class ModifyingCartItemsTest {
     public void testModifyingCartItemsAdd() throws Exception {
         driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");
         driver.manage().window().maximize();
-        WebDriverWait wait1 = new WebDriverWait(driver, 20);
+        WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-btn")));
         driver.findElement(By.id("add-to-cart-btn")).click();
         
@@ -79,7 +79,7 @@ public class ModifyingCartItemsTest {
     public void testModifyingCartItemsDecrease() throws Exception {
         driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");
         driver.manage().window().maximize();
-        WebDriverWait wait1 = new WebDriverWait(driver, 20);
+        WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-btn")));
         driver.findElement(By.id("add-to-cart-btn")).click();
         

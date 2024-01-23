@@ -60,7 +60,7 @@ public class SectionInMeatSeaFoodPageTest {
     public void testSectionInMeatPage() throws Exception {
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
-        WebDriverWait wait1 = new WebDriverWait(driver, 20);
+        WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("Home_Ancillary_0")));
         driver.findElement(By.id("Home_Ancillary_0")).click();
         //WebDriverWait wait1 = new WebDriverWait(driver, 20);

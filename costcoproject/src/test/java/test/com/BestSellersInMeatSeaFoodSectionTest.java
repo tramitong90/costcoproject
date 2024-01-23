@@ -60,7 +60,7 @@ public class BestSellersInMeatSeaFoodSectionTest {
 
     @Test
     public void testSelectingItem() throws Exception {
-        WebDriverWait wait1 = new WebDriverWait(driver, 20);
+        WebDriverWait wait1 = new WebDriverWait(driver, 30);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("image0")));
         driver.findElement(By.id("image0")).click();
         driver.get("https://www.costco.com/.product.100393370.html");
@@ -71,7 +71,7 @@ public class BestSellersInMeatSeaFoodSectionTest {
     public void testItemDescription() throws Exception {
    
         //driver.findElement(By.id("image0"));
-        WebDriverWait wait1 = new WebDriverWait(driver, 20);
+        WebDriverWait wait1 = new WebDriverWait(driver, 30);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"slick-slide00\"]/div/p")));
         assertEquals(driver.findElement(By.xpath("//*[@id=\"slick-slide00\"]/div/p")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
     }
