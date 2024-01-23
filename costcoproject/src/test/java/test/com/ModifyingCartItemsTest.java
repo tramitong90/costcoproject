@@ -54,11 +54,11 @@ public class ModifyingCartItemsTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.close();
+        //driver.close();
     }
 
     @Test
-    public void testModifyingCartItems() throws Exception {
+    public void testModifyingCartItemsAdd() throws Exception {
         driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");
         driver.manage().window().maximize();
         driver.findElement(By.id("add-to-cart-btn")).click();
@@ -69,6 +69,26 @@ public class ModifyingCartItemsTest {
        
         driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=Ohir3LGY423kfUG7b%2FHCDrX7AF9s3LKBmOjoSd0ZJ3PW6w%2Bxh2pOgY%2BsEye6eBOga7DNu%2FDVBVrx%2FRof6txRySZ1MSxvbfWVo7cd1p9TM6U%3D&ddkey=http%3ACheckoutCartView");
         driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
+       
+        assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "2");
+    }
+    
+     @Test
+    public void testModifyingCartItemsDecrease() throws Exception {
+        driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");
+        driver.manage().window().maximize();
+        driver.findElement(By.id("add-to-cart-btn")).click();
+        
+        WebDriverWait wait1 =new WebDriverWait(driver, 20);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
+        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
+       
+        driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=Ohir3LGY423kfUG7b%2FHCDrX7AF9s3LKBmOjoSd0ZJ3PW6w%2Bxh2pOgY%2BsEye6eBOga7DNu%2FDVBVrx%2FRof6txRySZ1MSxvbfWVo7cd1p9TM6U%3D&ddkey=http%3ACheckoutCartView");
+        driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
+        driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
+        driver.findElement(By.id("sub-1")).click();
+       
+        assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "2");
     }
 
 }
