@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-//mi add comments here
+
 public class BestSellersInMeatSeaFoodSectionTest {
 
     private WebDriver driver;
@@ -65,6 +65,8 @@ public class BestSellersInMeatSeaFoodSectionTest {
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("image0")));
         driver.findElement(By.id("image0")).click();
         driver.get("https://www.costco.com/.product.100393370.html");
+        
+        Thread.sleep(1000);
         assertEquals(driver.findElement(By.xpath("//*[@id=\"product-details\"]/div[1]/div/div[1]/h1")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
     }
     

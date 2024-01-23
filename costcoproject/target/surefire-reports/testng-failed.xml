@@ -3,15 +3,14 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="test.com.RemoveFromCartTest">
+      <class name="test.com.SectionInMeatSeaFoodPageTest">
         <methods>
-          <include name="tearDownMethod"/>
-          <include name="tearDownClass"/>
-          <include name="testRemoveFromCart"/>
-          <include name="setUpClass"/>
           <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
         </methods>
-      </class> <!-- test.com.RemoveFromCartTest -->
+      </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
       <class name="test.com.BestSellersInMeatSeaFoodSectionTest">
         <methods>
           <include name="tearDownClass"/>
@@ -29,14 +28,6 @@
           <include name="setUpMethod"/>
         </methods>
       </class> <!-- test.com.ModifyingCartItemsTest -->
-      <class name="test.com.SectionInMeatSeaFoodPageTest">
-        <methods>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-        </methods>
-      </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
       <class name="test.com.EmptyCartCheckoutTest">
         <methods>
           <include name="setUpClass"/>
@@ -77,19 +68,21 @@
           <include name="setUpClass"/>
         </methods>
       </class> <!-- test.com.ListOfProductInMeatSeafoodTest -->
-      <class name="test.com.RemoveFromCart2Test">
+      <class name="test.com.RemoveFromCartTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="setUpMethod"/>
-          <include name="testRemoveFromCart2"/>
           <include name="tearDownMethod"/>
+          <include name="tearDownClass"/>
+          <include name="testRemoveFromCart"/>
+          <include name="setUpClass"/>
+          <include name="setUpMethod"/>
         </methods>
-      </class> <!-- test.com.RemoveFromCart2Test -->
+      </class> <!-- test.com.RemoveFromCartTest -->
       <class name="test.com.PagesByCategoryFilterInGroceryTest">
         <methods>
           <include name="setUpMethod"/>
           <include name="tearDownClass"/>
+          <include name="testPoultryPage"/>
+          <include name="testSeaFoodPage"/>
           <include name="setUpClass"/>
           <include name="tearDownMethod"/>
         </methods>
