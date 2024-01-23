@@ -49,7 +49,7 @@ public class ListOfProductInMeatSeafoodTest {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+       // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         
     }
 
@@ -62,8 +62,10 @@ public class ListOfProductInMeatSeafoodTest {
     public void testAddToListButton() throws Exception {
         driver.manage().window().maximize();
         driver.get("https://www.costco.com/meat.html");
+        
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1500)", "");
+        
         WebDriverWait wait1 =new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.className("menuicon-image")));
         driver.findElement(By.className("menuicon-image")).click();
