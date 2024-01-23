@@ -1,93 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="6" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-23T20:33:07Z" name="Surefire suite" finished-at="2024-01-23T20:33:52Z" duration-ms="45449">
+  <suite started-at="2024-01-23T20:45:03Z" name="Surefire suite" finished-at="2024-01-23T20:45:51Z" duration-ms="48290">
     <groups>
     </groups>
-    <test started-at="2024-01-23T20:33:07Z" name="Surefire test" finished-at="2024-01-23T20:33:52Z" duration-ms="45449">
-      <class name="test.com.PagesByCategoryFilterInGroceryTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:07Z" name="setUpClass" finished-at="2024-01-23T14:33:07Z" duration-ms="10" status="PASS">
+    <test started-at="2024-01-23T20:45:03Z" name="Surefire test" finished-at="2024-01-23T20:45:51Z" duration-ms="48290">
+      <class name="test.com.ModifyingCartItemsTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:03Z" name="setUpClass" finished-at="2024-01-23T14:45:03Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:07Z" name="setUpMethod" finished-at="2024-01-23T14:33:08Z" duration-ms="1381" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:03Z" name="setUpMethod" finished-at="2024-01-23T14:45:04Z" duration-ms="1428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:08Z" name="testBeefPage" finished-at="2024-01-23T14:33:15Z" duration-ms="6573" status="PASS">
+        <test-method signature="testModifyingCartItemsAdd()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:04Z" name="testModifyingCartItemsAdd" finished-at="2024-01-23T14:45:26Z" duration-ms="22307" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:15Z" name="tearDownMethod" finished-at="2024-01-23T14:33:15Z" duration-ms="126" status="PASS">
+        </test-method> <!-- testModifyingCartItemsAdd -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:26Z" name="tearDownMethod" finished-at="2024-01-23T14:45:27Z" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:15Z" name="setUpMethod" finished-at="2024-01-23T14:33:16Z" duration-ms="737" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:27Z" name="setUpMethod" finished-at="2024-01-23T14:45:27Z" duration-ms="776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testLambPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:16Z" name="testLambPage" finished-at="2024-01-23T14:33:22Z" duration-ms="6469" status="PASS">
+        <test-method signature="testModifyingCartItemsDecrease()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:27Z" name="testModifyingCartItemsDecrease" finished-at="2024-01-23T14:45:51Z" duration-ms="23497" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLambPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:22Z" name="tearDownMethod" finished-at="2024-01-23T14:33:22Z" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:22Z" name="setUpMethod" finished-at="2024-01-23T14:33:23Z" duration-ms="722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPlantBasedProteinPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:23Z" name="testPlantBasedProteinPage" finished-at="2024-01-23T14:33:29Z" duration-ms="6297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlantBasedProteinPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:29Z" name="tearDownMethod" finished-at="2024-01-23T14:33:30Z" duration-ms="102" status="PASS">
+        </test-method> <!-- testModifyingCartItemsDecrease -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:51Z" name="tearDownMethod" finished-at="2024-01-23T14:45:51Z" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:30Z" name="setUpMethod" finished-at="2024-01-23T14:33:30Z" duration-ms="756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPorkPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:30Z" name="testPorkPage" finished-at="2024-01-23T14:33:37Z" duration-ms="7157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPorkPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:37Z" name="tearDownMethod" finished-at="2024-01-23T14:33:38Z" duration-ms="104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:38Z" name="setUpMethod" finished-at="2024-01-23T14:33:38Z" duration-ms="722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPoultryPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:38Z" name="testPoultryPage" finished-at="2024-01-23T14:33:45Z" duration-ms="6683" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPoultryPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:45Z" name="tearDownMethod" finished-at="2024-01-23T14:33:45Z" duration-ms="118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:45Z" name="setUpMethod" finished-at="2024-01-23T14:33:46Z" duration-ms="706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testSeaFoodPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:46Z" name="testSeaFoodPage" finished-at="2024-01-23T14:33:52Z" duration-ms="6550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSeaFoodPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:52Z" name="tearDownMethod" finished-at="2024-01-23T14:33:52Z" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@d6da883]" started-at="2024-01-23T14:33:52Z" name="tearDownClass" finished-at="2024-01-23T14:33:52Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:51Z" name="tearDownClass" finished-at="2024-01-23T14:45:51Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.PagesByCategoryFilterInGroceryTest -->
+      </class> <!-- test.com.ModifyingCartItemsTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

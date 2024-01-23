@@ -93,6 +93,7 @@ public class ModifyingCartItemsTest {
         driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
         driver.findElement(By.id("sub-1")).click();
        
+        Thread.sleep(1000);
         assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "2");
     }
 
