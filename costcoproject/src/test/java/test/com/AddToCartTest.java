@@ -22,6 +22,7 @@ import org.testng.annotations.Test;
  *
  * @author SK
  */
+//mi add comment here
 public class AddToCartTest {
     
      private WebDriver driver;

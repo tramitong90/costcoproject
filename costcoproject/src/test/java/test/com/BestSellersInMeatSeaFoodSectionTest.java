@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
+//mi add comments here
 public class BestSellersInMeatSeaFoodSectionTest {
 
     private WebDriver driver;

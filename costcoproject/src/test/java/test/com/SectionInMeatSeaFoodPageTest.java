@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
+//mi add comment here
 public class SectionInMeatSeaFoodPageTest {
     private WebDriver driver;
     private String baseUrl;
