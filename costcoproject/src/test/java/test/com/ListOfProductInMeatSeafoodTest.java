@@ -49,7 +49,7 @@ public class ListOfProductInMeatSeafoodTest {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         
     }
 
@@ -88,7 +88,7 @@ public class ListOfProductInMeatSeafoodTest {
         assertEquals(driver.findElement(By.id("product-details")).getText().contains("Crescent Foods Halal Hand-Cut Beef, Chicken Combo Pack - 14 Total Packs, 13.5 Lbs. Total"), true);
        
     }
-    
+ 
 //    @Test
 //    public void testProductInfor() throws Exception {
 //        JavascriptExecutor js = (JavascriptExecutor) driver;
