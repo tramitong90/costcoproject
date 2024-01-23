@@ -54,7 +54,7 @@ public class ModifyingCartItemsTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        //driver.close();
+        driver.close();
     }
 
     @Test
