@@ -1,86 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results total="21" passed="21" failed="0" skipped="0">
+<testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-21T17:08:53Z" name="Command line suite" finished-at="2024-01-21T17:17:15Z" duration-ms="502197">
+  <suite started-at="2024-01-22T19:42:16Z" name="test.com.BestSellersInMeatSeaFoodSectionTest" finished-at="2024-01-22T19:42:44Z" duration-ms="27956">
     <groups>
     </groups>
-    <test started-at="2024-01-21T17:08:53Z" name="Command line test" finished-at="2024-01-21T17:17:15Z" duration-ms="502197">
-      <class name="test.com.ModifyingCartItemsTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:10:39Z" name="setUpClass" finished-at="2024-01-21T12:10:39Z" duration-ms="0" status="PASS">
+    <test started-at="2024-01-22T19:42:16Z" name="Command line test" finished-at="2024-01-22T19:42:44Z" duration-ms="27956">
+      <class name="test.com.BestSellersInMeatSeaFoodSectionTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:16Z" name="setUpClass" finished-at="2024-01-22T13:42:16Z" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:10:39Z" name="setUpMethod" finished-at="2024-01-21T12:10:39Z" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:16Z" name="setUpMethod" finished-at="2024-01-22T13:42:25Z" duration-ms="9262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testModifyingCartItems()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:10:39Z" name="testModifyingCartItems" finished-at="2024-01-21T12:12:02Z" duration-ms="82589" status="PASS">
+        <test-method signature="testItemDescription()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:25Z" name="testItemDescription" finished-at="2024-01-22T13:42:28Z" duration-ms="2819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testModifyingCartItems -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:12:02Z" name="tearDownMethod" finished-at="2024-01-21T12:12:02Z" duration-ms="113" status="PASS">
+        </test-method> <!-- testItemDescription -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:28Z" name="tearDownMethod" finished-at="2024-01-22T13:42:28Z" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.ModifyingCartItemsTest@22eeefeb]" started-at="2024-01-21T12:12:02Z" name="tearDownClass" finished-at="2024-01-21T12:12:02Z" duration-ms="0" status="PASS">
-=======
-<testng-results total="24" passed="14" failed="3" skipped="7">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-01-20T21:19:02Z" name="Surefire suite" finished-at="2024-01-20T21:22:56Z" duration-ms="234390">
-    <groups>
-    </groups>
-    <test started-at="2024-01-20T21:19:02Z" name="Surefire test" finished-at="2024-01-20T21:22:56Z" duration-ms="234390">
-      <class name="test.com.RemoveFromCart2Test">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.RemoveFromCart2Test@71248c21]" started-at="2024-01-20T15:22:21Z" name="setUpClass" finished-at="2024-01-20T15:22:21Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.RemoveFromCart2Test@71248c21]" started-at="2024-01-20T15:22:21Z" name="setUpMethod" finished-at="2024-01-20T15:22:21Z" duration-ms="773" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:28Z" name="setUpMethod" finished-at="2024-01-22T13:42:35Z" duration-ms="6698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testRemoveFromCart2()[pri:0, instance:test.com.RemoveFromCart2Test@71248c21]" started-at="2024-01-20T15:22:21Z" name="testRemoveFromCart2" finished-at="2024-01-20T15:22:36Z" duration-ms="14611" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="testSelectingItem()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:35Z" name="testSelectingItem" finished-at="2024-01-22T13:42:44Z" duration-ms="8898" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span"}
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=120.0.6099.225)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '192.168.50.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+System info: host: 'LAPTOP-U50S12S3', ip: '10.1.10.214', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 376cf3f8620b134c41aa54b5058e9ba3
-*** Element info: {Using=xpath, value=/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\navat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 850c69fbbb2dfab16efc05a1cf25572e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span"}
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=120.0.6099.225)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '192.168.50.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+System info: host: 'LAPTOP-U50S12S3', ip: '10.1.10.214', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 376cf3f8620b134c41aa54b5058e9ba3
-*** Element info: {Using=xpath, value=/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\navat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 850c69fbbb2dfab16efc05a1cf25572e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at test.com.RemoveFromCart2Test.testRemoveFromCart2(RemoveFromCart2Test.java:75)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at test.com.BestSellersInMeatSeaFoodSectionTest.testSelectingItem(BestSellersInMeatSeaFoodSectionTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -98,941 +82,105 @@ Session ID: 376cf3f8620b134c41aa54b5058e9ba3
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRemoveFromCart2 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.RemoveFromCart2Test@71248c21]" started-at="2024-01-20T15:22:36Z" name="tearDownMethod" finished-at="2024-01-20T15:22:37Z" duration-ms="402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.RemoveFromCart2Test@71248c21]" started-at="2024-01-20T15:22:37Z" name="tearDownClass" finished-at="2024-01-20T15:22:37Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.RemoveFromCart2Test -->
-      <class name="test.com.ModifyingCartItemsTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.ModifyingCartItemsTest@12405818]" started-at="2024-01-20T15:20:20Z" name="setUpClass" finished-at="2024-01-20T15:20:20Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@12405818]" started-at="2024-01-20T15:20:20Z" name="setUpMethod" finished-at="2024-01-20T15:20:21Z" duration-ms="768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testModifyingCartItems()[pri:0, instance:test.com.ModifyingCartItemsTest@12405818]" started-at="2024-01-20T15:20:21Z" name="testModifyingCartItems" finished-at="2024-01-20T15:20:43Z" duration-ms="21379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testModifyingCartItems -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@12405818]" started-at="2024-01-20T15:20:43Z" name="tearDownMethod" finished-at="2024-01-20T15:20:43Z" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.ModifyingCartItemsTest@12405818]" started-at="2024-01-20T15:20:43Z" name="tearDownClass" finished-at="2024-01-20T15:20:43Z" duration-ms="0" status="PASS">
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.ModifyingCartItemsTest -->
-      <class name="test.com.BestSellersInMeatSeaFoodSectionTest">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:19Z" name="setUpMethod" finished-at="2024-01-21T12:09:27Z" duration-ms="8529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:19Z" name="setUpClass" finished-at="2024-01-21T12:09:19Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="testItemDescription()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:27Z" name="testItemDescription" finished-at="2024-01-21T12:09:27Z" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testItemDescription -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:27Z" name="tearDownMethod" finished-at="2024-01-21T12:09:28Z" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:28Z" name="setUpMethod" finished-at="2024-01-21T12:09:39Z" duration-ms="10917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testSelectingItem()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:39Z" name="testSelectingItem" finished-at="2024-01-21T12:09:48Z" duration-ms="9514" status="PASS">
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectingItem -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:48Z" name="tearDownMethod" finished-at="2024-01-21T12:09:48Z" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:44Z" name="tearDownMethod" finished-at="2024-01-22T13:42:44Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-U50S12S3', ip: '10.1.10.214', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\navat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 850c69fbbb2dfab16efc05a1cf25572e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-U50S12S3', ip: '10.1.10.214', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\navat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 850c69fbbb2dfab16efc05a1cf25572e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at test.com.BestSellersInMeatSeaFoodSectionTest.tearDownMethod(BestSellersInMeatSeaFoodSectionTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@289d1c02]" started-at="2024-01-21T12:09:48Z" name="tearDownClass" finished-at="2024-01-21T12:09:48Z" duration-ms="0" status="PASS">
-=======
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:18Z" name="setUpClass" finished-at="2024-01-20T15:19:18Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:18Z" name="setUpMethod" finished-at="2024-01-20T15:19:24Z" duration-ms="5904" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testItemDescription()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:24Z" name="testItemDescription" finished-at="2024-01-20T15:19:24Z" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testItemDescription -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:24Z" name="tearDownMethod" finished-at="2024-01-20T15:19:25Z" duration-ms="149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:25Z" name="setUpMethod" finished-at="2024-01-20T15:19:30Z" duration-ms="5750" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testSelectingItem()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:30Z" name="testSelectingItem" finished-at="2024-01-20T15:19:36Z" duration-ms="5171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSelectingItem -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:36Z" name="tearDownMethod" finished-at="2024-01-20T15:19:36Z" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@6a396c1e]" started-at="2024-01-20T15:19:36Z" name="tearDownClass" finished-at="2024-01-20T15:19:36Z" duration-ms="0" status="PASS">
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.BestSellersInMeatSeaFoodSectionTest@25af5db5]" started-at="2024-01-22T13:42:44Z" name="tearDownClass" finished-at="2024-01-22T13:42:44Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- test.com.BestSellersInMeatSeaFoodSectionTest -->
-      <class name="test.com.CheckingLinkToPhotoCategoryTest">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:09:48Z" name="setUpClass" finished-at="2024-01-21T12:09:48Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:09:48Z" name="setUpMethod" finished-at="2024-01-21T12:09:49Z" duration-ms="711" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testCheckingLinkToPhotoCategory()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:09:49Z" name="testCheckingLinkToPhotoCategory" finished-at="2024-01-21T12:10:05Z" duration-ms="16453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckingLinkToPhotoCategory -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:10:05Z" name="tearDownMethod" finished-at="2024-01-21T12:10:05Z" duration-ms="155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@4e718207]" started-at="2024-01-21T12:10:05Z" name="tearDownClass" finished-at="2024-01-21T12:10:05Z" duration-ms="0" status="PASS">
-=======
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@6b67034]" started-at="2024-01-20T15:19:36Z" name="setUpClass" finished-at="2024-01-20T15:19:36Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@6b67034]" started-at="2024-01-20T15:19:36Z" name="setUpMethod" finished-at="2024-01-20T15:19:36Z" duration-ms="726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testCheckingLinkToPhotoCategory()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@6b67034]" started-at="2024-01-20T15:19:36Z" name="testCheckingLinkToPhotoCategory" finished-at="2024-01-20T15:19:44Z" duration-ms="7989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckingLinkToPhotoCategory -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@6b67034]" started-at="2024-01-20T15:19:44Z" name="tearDownMethod" finished-at="2024-01-20T15:19:45Z" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@6b67034]" started-at="2024-01-20T15:19:45Z" name="tearDownClass" finished-at="2024-01-20T15:19:45Z" duration-ms="0" status="PASS">
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
-<<<<<<< HEAD
-      <class name="test.com.AddToCartTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:08:53Z" name="setUpClass" finished-at="2024-01-21T12:08:53Z" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:08:53Z" name="setUpMethod" finished-at="2024-01-21T12:08:54Z" duration-ms="1532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testCase1()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:08:54Z" name="testCase1" finished-at="2024-01-21T12:09:19Z" duration-ms="24396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:09:19Z" name="tearDownMethod" finished-at="2024-01-21T12:09:19Z" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.AddToCartTest@543c6f6d]" started-at="2024-01-21T12:09:19Z" name="tearDownClass" finished-at="2024-01-21T12:09:19Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.AddToCartTest -->
-      <class name="test.com.PagesByCategoryFilterInGroceryTest">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:02Z" name="setUpMethod" finished-at="2024-01-21T12:12:27Z" duration-ms="24766" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:02Z" name="setUpClass" finished-at="2024-01-21T12:12:02Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:27Z" name="testBeefPage" finished-at="2024-01-21T12:12:29Z" duration-ms="2456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:29Z" name="tearDownMethod" finished-at="2024-01-21T12:12:30Z" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:30Z" name="setUpMethod" finished-at="2024-01-21T12:12:47Z" duration-ms="17472" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testLambPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:47Z" name="testLambPage" finished-at="2024-01-21T12:12:49Z" duration-ms="1978" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLambPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:49Z" name="tearDownMethod" finished-at="2024-01-21T12:12:49Z" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:12:49Z" name="setUpMethod" finished-at="2024-01-21T12:13:06Z" duration-ms="16870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPlantBasedProteinPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:06Z" name="testPlantBasedProteinPage" finished-at="2024-01-21T12:13:09Z" duration-ms="3035" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlantBasedProteinPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:09Z" name="tearDownMethod" finished-at="2024-01-21T12:13:09Z" duration-ms="114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:09Z" name="setUpMethod" finished-at="2024-01-21T12:13:31Z" duration-ms="21545" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPorkPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:31Z" name="testPorkPage" finished-at="2024-01-21T12:13:33Z" duration-ms="1985" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPorkPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:33Z" name="tearDownMethod" finished-at="2024-01-21T12:13:33Z" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:33Z" name="setUpMethod" finished-at="2024-01-21T12:13:51Z" duration-ms="17783" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPoultryPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:51Z" name="testPoultryPage" finished-at="2024-01-21T12:13:53Z" duration-ms="2352" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPoultryPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:53Z" name="tearDownMethod" finished-at="2024-01-21T12:13:53Z" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:13:53Z" name="setUpMethod" finished-at="2024-01-21T12:14:11Z" duration-ms="18255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testSeaFoodPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:14:11Z" name="testSeaFoodPage" finished-at="2024-01-21T12:14:14Z" duration-ms="2887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSeaFoodPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:14:14Z" name="tearDownMethod" finished-at="2024-01-21T12:14:14Z" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@17d0685f]" started-at="2024-01-21T12:14:14Z" name="tearDownClass" finished-at="2024-01-21T12:14:14Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.PagesByCategoryFilterInGroceryTest -->
-      <class name="test.com.PagesByCategoryinGroceryTest">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:14Z" name="setUpMethod" finished-at="2024-01-21T12:14:30Z" duration-ms="15507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:14Z" name="setUpClass" finished-at="2024-01-21T12:14:14Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:30Z" name="testBeefPage" finished-at="2024-01-21T12:14:32Z" duration-ms="2098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:32Z" name="tearDownMethod" finished-at="2024-01-21T12:14:32Z" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:32Z" name="setUpMethod" finished-at="2024-01-21T12:14:46Z" duration-ms="14359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testGameMeatPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:46Z" name="testGameMeatPage" finished-at="2024-01-21T12:14:48Z" duration-ms="1933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGameMeatPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:48Z" name="tearDownMethod" finished-at="2024-01-21T12:14:48Z" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:14:48Z" name="setUpMethod" finished-at="2024-01-21T12:15:02Z" duration-ms="14092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testLambPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:02Z" name="testLambPage" finished-at="2024-01-21T12:15:04Z" duration-ms="1486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLambPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:04Z" name="tearDownMethod" finished-at="2024-01-21T12:15:04Z" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:04Z" name="setUpMethod" finished-at="2024-01-21T12:15:21Z" duration-ms="17233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPlantBasedProteinPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:21Z" name="testPlantBasedProteinPage" finished-at="2024-01-21T12:15:23Z" duration-ms="1441" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlantBasedProteinPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:23Z" name="tearDownMethod" finished-at="2024-01-21T12:15:23Z" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:23Z" name="setUpMethod" finished-at="2024-01-21T12:15:40Z" duration-ms="17017" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPorkPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:40Z" name="testPorkPage" finished-at="2024-01-21T12:15:42Z" duration-ms="1793" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPorkPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:42Z" name="tearDownMethod" finished-at="2024-01-21T12:15:42Z" duration-ms="91" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:42Z" name="setUpMethod" finished-at="2024-01-21T12:15:57Z" duration-ms="15529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPoultryPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:57Z" name="testPoultryPage" finished-at="2024-01-21T12:15:59Z" duration-ms="1648" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPoultryPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:59Z" name="tearDownMethod" finished-at="2024-01-21T12:15:59Z" duration-ms="104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:15:59Z" name="setUpMethod" finished-at="2024-01-21T12:16:17Z" duration-ms="17826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testSeaFoodPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:16:17Z" name="testSeaFoodPage" finished-at="2024-01-21T12:16:19Z" duration-ms="2261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSeaFoodPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:16:19Z" name="tearDownMethod" finished-at="2024-01-21T12:16:19Z" duration-ms="104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@4a87761d]" started-at="2024-01-21T12:16:19Z" name="tearDownClass" finished-at="2024-01-21T12:16:19Z" duration-ms="0" status="PASS">
-=======
-      <class name="test.com.PagesByCategoryinGroceryTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:09Z" name="setUpClass" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:09Z" name="setUpMethod" finished-at="2024-01-20T15:21:17Z" duration-ms="7724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:17Z" name="testBeefPage" finished-at="2024-01-20T15:21:19Z" duration-ms="1770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:19Z" name="tearDownMethod" finished-at="2024-01-20T15:21:19Z" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:19Z" name="setUpMethod" finished-at="2024-01-20T15:21:27Z" duration-ms="7886" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testGameMeatPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:27Z" name="testGameMeatPage" finished-at="2024-01-20T15:21:28Z" duration-ms="1503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGameMeatPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:28Z" name="tearDownMethod" finished-at="2024-01-20T15:21:28Z" duration-ms="127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:28Z" name="setUpMethod" finished-at="2024-01-20T15:21:36Z" duration-ms="8035" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testLambPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:36Z" name="testLambPage" finished-at="2024-01-20T15:21:38Z" duration-ms="1467" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLambPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:38Z" name="tearDownMethod" finished-at="2024-01-20T15:21:38Z" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:38Z" name="setUpMethod" finished-at="2024-01-20T15:21:46Z" duration-ms="7821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPlantBasedProteinPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:46Z" name="testPlantBasedProteinPage" finished-at="2024-01-20T15:21:47Z" duration-ms="1615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlantBasedProteinPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:47Z" name="tearDownMethod" finished-at="2024-01-20T15:21:47Z" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:47Z" name="setUpMethod" finished-at="2024-01-20T15:21:55Z" duration-ms="7738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPorkPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:55Z" name="testPorkPage" finished-at="2024-01-20T15:21:58Z" duration-ms="2567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPorkPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:58Z" name="tearDownMethod" finished-at="2024-01-20T15:21:58Z" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:21:58Z" name="setUpMethod" finished-at="2024-01-20T15:22:08Z" duration-ms="10336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPoultryPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:22:08Z" name="testPoultryPage" finished-at="2024-01-20T15:22:10Z" duration-ms="1728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPoultryPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:22:10Z" name="tearDownMethod" finished-at="2024-01-20T15:22:10Z" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:22:10Z" name="setUpMethod" finished-at="2024-01-20T15:22:19Z" duration-ms="8527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testSeaFoodPage()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:22:19Z" name="testSeaFoodPage" finished-at="2024-01-20T15:22:21Z" duration-ms="1987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSeaFoodPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:22:21Z" name="tearDownMethod" finished-at="2024-01-20T15:22:21Z" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.PagesByCategoryinGroceryTest@16267862]" started-at="2024-01-20T15:22:21Z" name="tearDownClass" finished-at="2024-01-20T15:22:21Z" duration-ms="0" status="PASS">
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.PagesByCategoryinGroceryTest -->
-<<<<<<< HEAD
-      <class name="test.com.EmptyCartCheckoutTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:05Z" name="setUpClass" finished-at="2024-01-21T12:10:05Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:05Z" name="setUpMethod" finished-at="2024-01-21T12:10:06Z" duration-ms="714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testCart()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:06Z" name="testCart" finished-at="2024-01-21T12:10:39Z" duration-ms="32521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCart -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:39Z" name="tearDownClass" finished-at="2024-01-21T12:10:39Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@1d371b2d]" started-at="2024-01-21T12:10:39Z" name="tearDownMethod" finished-at="2024-01-21T12:10:39Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-      </class> <!-- test.com.EmptyCartCheckoutTest -->
-      <class name="test.com.SectionInMeatSeaFoodPageTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:00Z" name="setUpClass" finished-at="2024-01-21T12:17:00Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:00Z" name="setUpMethod" finished-at="2024-01-21T12:17:15Z" duration-ms="15270" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:15Z" name="testBeefPage" finished-at="2024-01-21T12:17:15Z" duration-ms="74" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:15Z" name="tearDownMethod" finished-at="2024-01-21T12:17:15Z" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@32eebfca]" started-at="2024-01-21T12:17:15Z" name="tearDownClass" finished-at="2024-01-21T12:17:15Z" duration-ms="0" status="PASS">
-=======
-      <class name="test.com.PagesByCategoryFilterInGroceryTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:20:43Z" name="setUpClass" finished-at="2024-01-20T15:20:43Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:20:43Z" name="setUpMethod" finished-at="2024-01-20T15:20:43Z" duration-ms="0" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=120.0.6099.225)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '192.168.50.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50244}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14f980cbf199d272953076ee5f07ebaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=120.0.6099.225)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '192.168.50.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50244}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14f980cbf199d272953076ee5f07ebaf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at test.com.PagesByCategoryFilterInGroceryTest.setUpMethod(PagesByCategoryFilterInGroceryTest.java:57)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="setUpMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="tearDownMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method signature="testLambPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="testLambPage" finished-at="2024-01-20T15:21:09Z" duration-ms="1" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLambPage -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="testBeefPage" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="tearDownMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="setUpMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="tearDownMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method signature="testPlantBasedProteinPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="testPlantBasedProteinPage" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlantBasedProteinPage -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="setUpMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="setUpMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testPoultryPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="testPoultryPage" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPoultryPage -->
-        <test-method signature="testPorkPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="testPorkPage" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPorkPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="tearDownMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="setUpMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="tearDownMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method signature="testSeaFoodPage()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="testSeaFoodPage" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSeaFoodPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="tearDownMethod" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.PagesByCategoryFilterInGroceryTest@442675e1]" started-at="2024-01-20T15:21:09Z" name="tearDownClass" finished-at="2024-01-20T15:21:09Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.PagesByCategoryFilterInGroceryTest -->
-      <class name="test.com.EmptyCartCheckoutTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@6c3f5566]" started-at="2024-01-20T15:19:45Z" name="setUpClass" finished-at="2024-01-20T15:19:45Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@6c3f5566]" started-at="2024-01-20T15:19:45Z" name="setUpMethod" finished-at="2024-01-20T15:19:45Z" duration-ms="0" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: c:\data1\chromedriver.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: c:\data1\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at test.com.EmptyCartCheckoutTest.setUpMethod(EmptyCartCheckoutTest.java:46)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testCart()[pri:0, instance:test.com.EmptyCartCheckoutTest@6c3f5566]" started-at="2024-01-20T15:19:45Z" name="testCart" finished-at="2024-01-20T15:19:45Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCart -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@6c3f5566]" started-at="2024-01-20T15:19:45Z" name="tearDownMethod" finished-at="2024-01-20T15:19:45Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@6c3f5566]" started-at="2024-01-20T15:19:45Z" name="tearDownClass" finished-at="2024-01-20T15:19:45Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.EmptyCartCheckoutTest -->
-      <class name="test.com.AddToCartTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.AddToCartTest@10b48321]" started-at="2024-01-20T15:19:02Z" name="setUpClass" finished-at="2024-01-20T15:19:02Z" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.AddToCartTest@10b48321]" started-at="2024-01-20T15:19:02Z" name="setUpMethod" finished-at="2024-01-20T15:19:03Z" duration-ms="1395" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testCase1()[pri:0, instance:test.com.AddToCartTest@10b48321]" started-at="2024-01-20T15:19:03Z" name="testCase1" finished-at="2024-01-20T15:19:18Z" duration-ms="15195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.AddToCartTest@10b48321]" started-at="2024-01-20T15:19:18Z" name="tearDownMethod" finished-at="2024-01-20T15:19:18Z" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.AddToCartTest@10b48321]" started-at="2024-01-20T15:19:18Z" name="tearDownClass" finished-at="2024-01-20T15:19:18Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.AddToCartTest -->
-      <class name="test.com.SectionInMeatSeaFoodPageTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@314c508a]" started-at="2024-01-20T15:22:47Z" name="setUpClass" finished-at="2024-01-20T15:22:47Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@314c508a]" started-at="2024-01-20T15:22:47Z" name="setUpMethod" finished-at="2024-01-20T15:22:56Z" duration-ms="8839" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testBeefPage()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@314c508a]" started-at="2024-01-20T15:22:56Z" name="testBeefPage" finished-at="2024-01-20T15:22:56Z" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBeefPage -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@314c508a]" started-at="2024-01-20T15:22:56Z" name="tearDownMethod" finished-at="2024-01-20T15:22:56Z" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@314c508a]" started-at="2024-01-20T15:22:56Z" name="tearDownClass" finished-at="2024-01-20T15:22:56Z" duration-ms="1" status="PASS">
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
-<<<<<<< HEAD
-      <class name="test.com.RemoveFromCartTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:19Z" name="setUpClass" finished-at="2024-01-21T12:16:19Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:19Z" name="setUpMethod" finished-at="2024-01-21T12:16:20Z" duration-ms="780" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testRemoveFromCart()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:20Z" name="testRemoveFromCart" finished-at="2024-01-21T12:16:59Z" duration-ms="39390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRemoveFromCart -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:16:59Z" name="tearDownMethod" finished-at="2024-01-21T12:17:00Z" duration-ms="189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.RemoveFromCartTest@28ac3dc3]" started-at="2024-01-21T12:17:00Z" name="tearDownClass" finished-at="2024-01-21T12:17:00Z" duration-ms="0" status="PASS">
-=======
-      <class name="test.com.ListOfProductInMeatSeafoodTest">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:19:45Z" name="setUpMethod" finished-at="2024-01-20T15:19:50Z" duration-ms="5640" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:19:45Z" name="setUpClass" finished-at="2024-01-20T15:19:45Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="testAddToListButton()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:19:50Z" name="testAddToListButton" finished-at="2024-01-20T15:20:09Z" duration-ms="18969" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Sign In] but found [Sign In | Costco]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Sign In] but found [Sign In | Costco]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at test.com.ListOfProductInMeatSeafoodTest.testAddToListButton(ListOfProductInMeatSeafoodTest.java:67)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddToListButton -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:20:09Z" name="tearDownMethod" finished-at="2024-01-20T15:20:09Z" duration-ms="157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:20:09Z" name="setUpMethod" finished-at="2024-01-20T15:20:15Z" duration-ms="5610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testSelectingItem()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:20:15Z" name="testSelectingItem" finished-at="2024-01-20T15:20:20Z" duration-ms="4806" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSelectingItem -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:20:20Z" name="tearDownMethod" finished-at="2024-01-20T15:20:20Z" duration-ms="681" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.ListOfProductInMeatSeafoodTest@453da22c]" started-at="2024-01-20T15:20:20Z" name="tearDownClass" finished-at="2024-01-20T15:20:20Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.ListOfProductInMeatSeafoodTest -->
-      <class name="test.com.RemoveFromCartTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.RemoveFromCartTest@71a794e5]" started-at="2024-01-20T15:22:37Z" name="setUpClass" finished-at="2024-01-20T15:22:37Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.RemoveFromCartTest@71a794e5]" started-at="2024-01-20T15:22:37Z" name="setUpMethod" finished-at="2024-01-20T15:22:37Z" duration-ms="742" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testRemoveFromCart()[pri:0, instance:test.com.RemoveFromCartTest@71a794e5]" started-at="2024-01-20T15:22:37Z" name="testRemoveFromCart" finished-at="2024-01-20T15:22:47Z" duration-ms="9469" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@alt='Mohawk Luxury Vinyl Plank Flooring']"}
-  (Session info: chrome=120.0.6099.225)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '192.168.50.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20127e21a60d5d4082dadd4434db745c
-*** Element info: {Using=xpath, value=//img[@alt='Mohawk Luxury Vinyl Plank Flooring']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@alt='Mohawk Luxury Vinyl Plank Flooring']"}
-  (Session info: chrome=120.0.6099.225)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '192.168.50.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20127e21a60d5d4082dadd4434db745c
-*** Element info: {Using=xpath, value=//img[@alt='Mohawk Luxury Vinyl Plank Flooring']}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at test.com.RemoveFromCartTest.testRemoveFromCart(RemoveFromCartTest.java:62)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRemoveFromCart -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.RemoveFromCartTest@71a794e5]" started-at="2024-01-20T15:22:47Z" name="tearDownMethod" finished-at="2024-01-20T15:22:47Z" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.RemoveFromCartTest@71a794e5]" started-at="2024-01-20T15:22:47Z" name="tearDownClass" finished-at="2024-01-20T15:22:47Z" duration-ms="0" status="PASS">
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.RemoveFromCartTest -->
-<<<<<<< HEAD
     </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
-=======
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
+  </suite> <!-- test.com.BestSellersInMeatSeaFoodSectionTest -->
 </testng-results>
