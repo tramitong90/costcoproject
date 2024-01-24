@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 /costcoproject/target/
 /costcoproject/AddtolistTest/target/
+/costcoproject/src/test/java/test/com/AddtolistTest/target/
+/costcoproject/src/test/java/test/AddtolistTest/target/
