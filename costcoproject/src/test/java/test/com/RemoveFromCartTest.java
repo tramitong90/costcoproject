@@ -68,7 +68,7 @@ public class RemoveFromCartTest {
         driver.findElement(By.linkText("View Cart")).click();
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[automation-id='removeItemLink_1']")));
         driver.findElement(By.cssSelector("span[automation-id='removeItemLink_1']")).click();
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[automation-id='removeItemLink_2']")));
+        wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[automation-id='removeItemLink_2']")));
         driver.findElement(By.cssSelector("span[automation-id='removeItemLink_2']")).click();
         driver.navigate().refresh();
         

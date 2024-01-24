@@ -60,8 +60,8 @@ public class AddToCartTest {
     
      @Test
   public void testCase1() throws Exception {
-    driver.get(baseUrl + "chrome://newtab/");
     driver.get("https://www.costco.com/");
+    driver.manage().window().maximize();
     driver.findElement(By.id("search-field")).click();
     driver.findElement(By.id("search-field")).clear();
     driver.findElement(By.id("search-field")).sendKeys("watch");
@@ -84,7 +84,7 @@ public class AddToCartTest {
     driver.findElement(By.id("formcatsearch")).submit();
     driver.findElement(By.xpath("//div[@id='search-results']/div[3]/div[2]/div/div/div[2]/div[4]/a/div")).click();
     driver.findElement(By.xpath("//img[@alt='Apple Watch SE (2nd Generation) (GPS) Sport Band']")).click();
-     WebDriverWait wait1=new WebDriverWait(driver, 20);  //20 sec
+    WebDriverWait wait1=new WebDriverWait(driver, 20);  //20 sec
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-btn")));
     driver.findElement(By.id("add-to-cart-btn")).click();
     //WebDriverWait wait2=new WebDriverWait(driver, 30);  //20 sec
@@ -93,6 +93,13 @@ public class AddToCartTest {
     //driver.findElement(By.xpath("//div[@id='costcoModal']/div/div/div/button/span")).click();
     //driver.findElement(By.id("cart-d")).click();
     //driver.findElement(By.xpath("//div[@id='order-item_1']/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/label")).click();
+    
+    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
+    driver.findElement(By.linkText("View Cart")).click();
+    
+    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Apple Watch SE (2nd Generation) (GPS) Sport Band")));
+    assertEquals(driver.findElement(By.linkText("Apple Watch SE (2nd Generation) (GPS) Sport Band")).getText().equalsIgnoreCase("Apple Watch SE (2nd Generation) (GPS) Sport Band"), true);
+    assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "1");
   }
 
 }
