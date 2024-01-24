@@ -25,7 +25,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-//mi add comment here
+
 public class RemoveFromCartTest {
 
     private WebDriver driver;

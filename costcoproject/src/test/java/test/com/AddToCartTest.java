@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
  *
  * @author SK
  */
-//mi add comment here
+
 public class AddToCartTest {
     
      private WebDriver driver;
@@ -55,7 +55,8 @@ public class AddToCartTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-         driver.close();
+         
+        driver.close();
     }
     
      @Test
