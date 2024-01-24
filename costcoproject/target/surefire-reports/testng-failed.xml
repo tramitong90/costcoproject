@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [test.com.BestSellersInMeatSeaFoodSectionTest]" verbose="0">
   <test name="Command line test(failed)">
     <classes>
@@ -14,3 +15,20 @@
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [test.com.BestSellersInMeatSeaFoodSectionTest] -->
+=======
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="test.com.CheckingLinkToPhotoCategoryTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+          <include name="testCheckingLinkToPhotoCategory"/>
+        </methods>
+      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
+>>>>>>> 273e2b96f07760720c9d4853d85154501a318284

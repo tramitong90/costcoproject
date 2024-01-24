@@ -4,7 +4,6 @@
  */
 package test.com;
 
-import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -26,6 +25,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
+
 public class RemoveFromCartTest {
 
     private WebDriver driver;
@@ -56,22 +56,28 @@ public class RemoveFromCartTest {
     }
 
     @Test
-    public void testRemoveFromCart() {
+    public void testRemoveFromCart() throws InterruptedException {
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
         driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div/div[5]/div[5]")).click();
-        driver.findElement(By.id("add-to-cart-btn")).click();
-
         WebDriverWait wait1 = new WebDriverWait(driver, 20);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
-        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
-        driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[5]/div[1]/form/div/div/div/div/div/div[1]/div[2]/div[1]/div[4]/button/span")).click();
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[automation-id='addToCartButton']")));
+        driver.findElement(By.cssSelector("input[automation-id='addToCartButton']")).click();
 
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
+        driver.findElement(By.linkText("View Cart")).click();
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[automation-id='removeItemLink_1']")));
+        driver.findElement(By.cssSelector("span[automation-id='removeItemLink_1']")).click();
+        wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[automation-id='removeItemLink_2']")));
+        driver.findElement(By.cssSelector("span[automation-id='removeItemLink_2']")).click();
+        driver.navigate().refresh();
+        
+        Thread.sleep(2000);
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")).getText().equalsIgnoreCase("Your shopping cart is empty. Please add at least one item to your cart before checking out."), true);
        
-        assertEquals(driver.findElement(By.xpath("/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span")).getText().equalsIgnoreCase("0"), true);
+        //assertEquals(driver.findElement(By.xpath("/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span")).getText().equalsIgnoreCase("0"), true);
 
-        
+        assertEquals(driver.findElement(By.id("cart-d")).getText().contains("0"), true);
         
         try {
             Thread.sleep(2000);

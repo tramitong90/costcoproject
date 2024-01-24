@@ -23,6 +23,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
+
 public class ModifyingCartItemsTest {
 
     private WebDriver driver;
@@ -49,7 +50,7 @@ public class ModifyingCartItemsTest {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @AfterMethod
@@ -58,17 +59,44 @@ public class ModifyingCartItemsTest {
     }
 
     @Test
-    public void testModifyingCartItems() throws Exception {
+    public void testModifyingCartItemsAdd() throws Exception {
         driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");
         driver.manage().window().maximize();
+        WebDriverWait wait1 = new WebDriverWait(driver, 25);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-btn")));
         driver.findElement(By.id("add-to-cart-btn")).click();
         
-        WebDriverWait wait1 =new WebDriverWait(driver, 20);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
-        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
+       // WebDriverWait wait1 =new WebDriverWait(driver, 20);
+        WebDriverWait wait2 = new WebDriverWait(driver, 25);
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
+        driver.findElement(By.linkText("View Cart")).click();
        
         driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=Ohir3LGY423kfUG7b%2FHCDrX7AF9s3LKBmOjoSd0ZJ3PW6w%2Bxh2pOgY%2BsEye6eBOga7DNu%2FDVBVrx%2FRof6txRySZ1MSxvbfWVo7cd1p9TM6U%3D&ddkey=http%3ACheckoutCartView");
         driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
+       
+        assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "2");
+    }
+    
+     @Test
+    public void testModifyingCartItemsDecrease() throws Exception {
+        driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");
+        driver.manage().window().maximize();
+        WebDriverWait wait1 = new WebDriverWait(driver, 25);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-btn")));
+        driver.findElement(By.id("add-to-cart-btn")).click();
+        
+        WebDriverWait wait2 =new WebDriverWait(driver, 20);
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
+        driver.findElement(By.linkText("View Cart")).click();
+       
+        driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=Ohir3LGY423kfUG7b%2FHCDrX7AF9s3LKBmOjoSd0ZJ3PW6w%2Bxh2pOgY%2BsEye6eBOga7DNu%2FDVBVrx%2FRof6txRySZ1MSxvbfWVo7cd1p9TM6U%3D&ddkey=http%3ACheckoutCartView");
+        driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
+        driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.id("sub-1")).click();
+       
+        Thread.sleep(5000);
+        assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "1");
     }
 
 }

@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
+
 public class BestSellersInMeatSeaFoodSectionTest {
 
     private WebDriver driver;
@@ -47,9 +48,10 @@ public class BestSellersInMeatSeaFoodSectionTest {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.get("https://www.costco.com/meat.html");
+        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+        driver.get("https://www.costco.com/meat.html");
+        
     }
 
     @AfterMethod
@@ -59,9 +61,12 @@ public class BestSellersInMeatSeaFoodSectionTest {
 
     @Test
     public void testSelectingItem() throws Exception {
-   
+        WebDriverWait wait1 = new WebDriverWait(driver, 30);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("image0")));
         driver.findElement(By.id("image0")).click();
         driver.get("https://www.costco.com/.product.100393370.html");
+        
+        Thread.sleep(1000);
         assertEquals(driver.findElement(By.xpath("//*[@id=\"product-details\"]/div[1]/div/div[1]/h1")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
     }
     
@@ -69,6 +74,8 @@ public class BestSellersInMeatSeaFoodSectionTest {
     public void testItemDescription() throws Exception {
    
         //driver.findElement(By.id("image0"));
+        WebDriverWait wait1 = new WebDriverWait(driver, 30);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"slick-slide00\"]/div/p")));
         assertEquals(driver.findElement(By.xpath("//*[@id=\"slick-slide00\"]/div/p")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
     }
 

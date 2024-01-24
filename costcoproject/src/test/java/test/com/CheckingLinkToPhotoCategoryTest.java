@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
+
 public class CheckingLinkToPhotoCategoryTest {
 
     private WebDriver driver;
