@@ -68,8 +68,8 @@ public class ListOfProductInMeatSeafoodTest {
         js.executeScript("window.scrollBy(0,1500)", "");
         
         WebDriverWait wait1 =new WebDriverWait(driver, 25);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.className("menuicon-image")));
-        driver.findElement(By.className("menuicon-image")).click();
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[automation-id='listIcon_0']")));
+        driver.findElement(By.cssSelector("button[automation-id='listIcon_0']")).click();
         driver.get("https://signin.costco.com/e0714dd4-784d-46d6-a278-3e29553483eb/B2C_1A_SSO_WCS_signup_signin_567/oauth2/v2.0/authorize?ClientName=USBC&ui_locales=en-US&scope=openid+offline_access&response_type=code+id_token&redirect_uri=https%3A%2F%2Fwww.costco.com%2FOAuthLogonCmd&state=URL%3D%5BSSO%5Dhttps%3A%2F%2Fwww.costco.com%2Fmeat.html%5BSSO%5D&nonce=wlBg7V6jWHTTqAIO&client_id=4900eb1f-0c10-4bd9-99c3-c59e6c1ecebf&TC=0&response_mode=form_post");
         
         Thread.sleep(1000);

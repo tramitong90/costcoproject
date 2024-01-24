@@ -2,40 +2,40 @@
 <testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-23T20:45:03Z" name="Surefire suite" finished-at="2024-01-23T20:45:51Z" duration-ms="48290">
+  <suite started-at="2024-01-24T17:25:41Z" name="Surefire suite" finished-at="2024-01-24T17:26:35Z" duration-ms="54430">
     <groups>
     </groups>
-    <test started-at="2024-01-23T20:45:03Z" name="Surefire test" finished-at="2024-01-23T20:45:51Z" duration-ms="48290">
+    <test started-at="2024-01-24T17:25:41Z" name="Surefire test" finished-at="2024-01-24T17:26:35Z" duration-ms="54430">
       <class name="test.com.ModifyingCartItemsTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:03Z" name="setUpClass" finished-at="2024-01-23T14:45:03Z" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:25:41Z" name="setUpClass" finished-at="2024-01-24T11:25:41Z" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:03Z" name="setUpMethod" finished-at="2024-01-23T14:45:04Z" duration-ms="1428" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:25:41Z" name="setUpMethod" finished-at="2024-01-24T11:25:42Z" duration-ms="1326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testModifyingCartItemsAdd()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:04Z" name="testModifyingCartItemsAdd" finished-at="2024-01-23T14:45:26Z" duration-ms="22307" status="PASS">
+        <test-method signature="testModifyingCartItemsAdd()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:25:42Z" name="testModifyingCartItemsAdd" finished-at="2024-01-24T11:26:04Z" duration-ms="22181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifyingCartItemsAdd -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:26Z" name="tearDownMethod" finished-at="2024-01-23T14:45:27Z" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:26:04Z" name="tearDownMethod" finished-at="2024-01-24T11:26:04Z" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:27Z" name="setUpMethod" finished-at="2024-01-23T14:45:27Z" duration-ms="776" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:26:04Z" name="setUpMethod" finished-at="2024-01-24T11:26:05Z" duration-ms="924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testModifyingCartItemsDecrease()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:27Z" name="testModifyingCartItemsDecrease" finished-at="2024-01-23T14:45:51Z" duration-ms="23497" status="PASS">
+        <test-method signature="testModifyingCartItemsDecrease()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:26:05Z" name="testModifyingCartItemsDecrease" finished-at="2024-01-24T11:26:35Z" duration-ms="29422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testModifyingCartItemsDecrease -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:51Z" name="tearDownMethod" finished-at="2024-01-23T14:45:51Z" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:26:35Z" name="tearDownMethod" finished-at="2024-01-24T11:26:35Z" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-23T14:45:51Z" name="tearDownClass" finished-at="2024-01-23T14:45:51Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.ModifyingCartItemsTest@6cc7b4de]" started-at="2024-01-24T11:26:35Z" name="tearDownClass" finished-at="2024-01-24T11:26:35Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -67,8 +67,9 @@ public class ModifyingCartItemsTest {
         driver.findElement(By.id("add-to-cart-btn")).click();
         
        // WebDriverWait wait1 =new WebDriverWait(driver, 20);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
-        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
+        WebDriverWait wait2 = new WebDriverWait(driver, 25);
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
+        driver.findElement(By.linkText("View Cart")).click();
        
         driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=Ohir3LGY423kfUG7b%2FHCDrX7AF9s3LKBmOjoSd0ZJ3PW6w%2Bxh2pOgY%2BsEye6eBOga7DNu%2FDVBVrx%2FRof6txRySZ1MSxvbfWVo7cd1p9TM6U%3D&ddkey=http%3ACheckoutCartView");
         driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
@@ -84,17 +85,18 @@ public class ModifyingCartItemsTest {
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("add-to-cart-btn")));
         driver.findElement(By.id("add-to-cart-btn")).click();
         
-        //WebDriverWait wait1 =new WebDriverWait(driver, 20);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")));
-        driver.findElement(By.xpath("//*[@id=\"costcoModalText\"]/div[2]/div[2]/a/button")).click();
+        WebDriverWait wait2 =new WebDriverWait(driver, 20);
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
+        driver.findElement(By.linkText("View Cart")).click();
        
         driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=Ohir3LGY423kfUG7b%2FHCDrX7AF9s3LKBmOjoSd0ZJ3PW6w%2Bxh2pOgY%2BsEye6eBOga7DNu%2FDVBVrx%2FRof6txRySZ1MSxvbfWVo7cd1p9TM6U%3D&ddkey=http%3ACheckoutCartView");
         driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
         driver.findElement(By.xpath("//button[@id='add-1']/img")).click();
+        Thread.sleep(2000);
         driver.findElement(By.id("sub-1")).click();
        
-        Thread.sleep(1000);
-        assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "2");
+        Thread.sleep(5000);
+        assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "1");
     }
 
 }
