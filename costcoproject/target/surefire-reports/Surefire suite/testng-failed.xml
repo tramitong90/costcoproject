@@ -3,15 +3,15 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="test.com.CheckingLinkToPhotoCategoryTest">
+      <class name="test.com.SaveForLater_RemoveItem">
         <methods>
-          <include name="tearDownClass"/>
-          <include name="setUpMethod"/>
           <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="testUntitledTestCase"/>
           <include name="setUpClass"/>
-          <include name="testCheckingLinkToPhotoCategory"/>
         </methods>
-      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
+      </class> <!-- test.com.SaveForLater_RemoveItem -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
