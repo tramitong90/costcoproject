@@ -72,7 +72,7 @@ public class RemoveFromCartTest {
         driver.findElement(By.cssSelector("span[automation-id='removeItemLink_2']")).click();
         driver.navigate().refresh();
         
-        Thread.sleep(2000);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")));
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")).getText().equalsIgnoreCase("Your shopping cart is empty. Please add at least one item to your cart before checking out."), true);
        
         //assertEquals(driver.findElement(By.xpath("/html/body/header/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a/div/div/span")).getText().equalsIgnoreCase("0"), true);

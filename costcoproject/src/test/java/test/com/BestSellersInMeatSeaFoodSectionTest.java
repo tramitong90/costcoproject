@@ -75,8 +75,8 @@ public class BestSellersInMeatSeaFoodSectionTest {
    
         //driver.findElement(By.id("image0"));
         WebDriverWait wait1 = new WebDriverWait(driver, 30);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"slick-slide00\"]/div/p")));
-        assertEquals(driver.findElement(By.xpath("//*[@id=\"slick-slide00\"]/div/p")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs.")));
+        assertEquals(driver.findElement(By.linkText("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs.")).getText().contains("Northwest Fish Wild Alaskan Sockeye Salmon Fillets Total 25 Count, 1 Case Totaling 10 Lbs."), true);
     }
 
 }
