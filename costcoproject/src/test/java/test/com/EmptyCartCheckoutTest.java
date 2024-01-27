@@ -20,6 +20,7 @@ import org.testng.annotations.Test;
  *
  * @author pahan
  */
+
 public class EmptyCartCheckoutTest {
   private WebDriver driver;
   private String baseUrl;

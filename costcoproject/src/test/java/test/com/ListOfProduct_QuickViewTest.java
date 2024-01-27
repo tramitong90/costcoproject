@@ -4,12 +4,14 @@
  */
 package test.com;
 
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -21,13 +23,10 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-
-public class CheckingLinkToPhotoCategoryTest {
-
+public class ListOfProduct_QuickViewTest {
     private WebDriver driver;
     private String baseUrl;
-
-    public CheckingLinkToPhotoCategoryTest() {
+    public ListOfProduct_QuickViewTest() {
     }
 
     // TODO add test methods here.
@@ -35,6 +34,7 @@ public class CheckingLinkToPhotoCategoryTest {
     //
     // @Test
     // public void hello() {}
+
     @BeforeClass
     public static void setUpClass() throws Exception {
     }
@@ -48,29 +48,33 @@ public class CheckingLinkToPhotoCategoryTest {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.quit();
-        
+        driver.close();
     }
     
     @Test
-    public void testCheckingLinkToPhotoCategory() {//*[@id="crumbs_ul"]/li[2]/span
-        driver.get("https://www.costco.com/");
+    public void testQuickViewPopup() throws Exception {
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//*[@id=\"navigation-widget\"]/div/nav/div[8]/a")).click();
-    
-        assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div/div[1]/div/ol/li[2]/span")).getText().contains("Photo"), true);
+        driver.get("https://www.costco.com/meat.html");
         
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(CheckingLinkToPhotoCategoryTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        driver.close();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,2000)", "");
+        
+        
+//        
+//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"productTile_4000149679\"]/div[2]/div[1]/div/div")));
+        WebElement element = driver.findElement(By.xpath("//div[@id='productTile_4000149679']/div[2]/div/div/div"));
+        Actions action = new Actions(driver);
+        action.moveToElement(element).build().perform();
+        driver.findElement(By.xpath("//div[@id='productTile_4000149679']/div[2]/div/div/div")).click();
+        
+        WebDriverWait wait1 =new WebDriverWait(driver, 25);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("costcoModalTitle")));
+        assertEquals(driver.findElement(By.id("costcoModalTitle")).getText(), "Quick View");
+        
+        
     }
-
 }
