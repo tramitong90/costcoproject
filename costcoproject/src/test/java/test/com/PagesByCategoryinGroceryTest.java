@@ -36,130 +36,99 @@ public class PagesByCategoryinGroceryTest {
     // @Test
     // public void hello() {}
     @BeforeClass
-    public static void setUpClass() throws Exception {
+    public void setUpClass() throws Exception {
+        System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
+        driver = new ChromeDriver();
+        baseUrl = "https://www.google.com/";
+        driver.manage().window().maximize();
+        driver.get("https://www.costco.com/meat.html");
     }
 
     @AfterClass
-    public static void tearDownClass() throws Exception {
+    public void tearDownClass() throws Exception {
+        driver.close();
     }
 
     @BeforeMethod
     public void setUpMethod() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
-        driver = new ChromeDriver();
-        baseUrl = "https://www.google.com/";
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     }
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.close();
+        
     }
 
     @Test
     public void testBeefPage() throws Exception {
-        driver.get("https://www.costco.com/meat.html");
-        driver.manage().window().maximize();
         WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/beef.jpg')]")));
-//        driver.findElement(By.id("Home_Ancillary_0")).click();
-//        //WebDriverWait wait1 = new WebDriverWait(driver, 20);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
-//        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
         driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/beef.jpg')]")).click();
         
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Beef"), true);
-
+        driver.navigate().back();
     }
 
     @Test
     public void testLambPage() throws Exception {
-        driver.get("https://www.costco.com/meat.html");
-        driver.manage().window().maximize();
         WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[6]/a/div/div/div/img")));
-//        driver.findElement(By.id("Home_Ancillary_0")).click();
-//        //WebDriverWait wait1 = new WebDriverWait(driver, 20);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
-//        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
         driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[6]/a/div/div/div/img")).click();
+        
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Lamb"), true);
+        driver.navigate().back();
     }
 
     @Test
     public void testPlantBasedProteinPage() throws Exception {
-        driver.get("https://www.costco.com/meat.html");
-        driver.manage().window().maximize();
         WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[17]/a/div/div/div/img")));
-//        driver.findElement(By.id("Home_Ancillary_0")).click();
-//        //WebDriverWait wait1 = new WebDriverWait(driver, 20);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
-//        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
         driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[17]/a/div/div/div/img")).click();
 
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Plant Based Protein"), true);
+        driver.navigate().back();
     }
 
     @Test
     public void testPorkPage() throws Exception {
-        driver.get("https://www.costco.com/meat.html");
-        driver.manage().window().maximize();
         WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[3]/a/div/div/div/img")));
-//        driver.findElement(By.id("Home_Ancillary_0")).click();
-//        //WebDriverWait wait1 = new WebDriverWait(driver, 20);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
-//        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
         driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[3]/a/div/div/div/img")).click();
 
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Pork"), true);
+        driver.navigate().back();
     }
 
     @Test
     public void testPoultryPage() throws Exception {
-        driver.get("https://www.costco.com/meat.html");
-        driver.manage().window().maximize();
         WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[8]/a/div/div/div/img")));
-//        driver.findElement(By.id("Home_Ancillary_0")).click();
-//        //WebDriverWait wait1 = new WebDriverWait(driver, 20);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
-//        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
         driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[8]/a/div/div/div/img")).click();
 
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Poultry"), true);
+        driver.navigate().back();
     }
 
     @Test
     public void testSeaFoodPage() throws Exception {
-        driver.get("https://www.costco.com/meat.html");
-        driver.manage().window().maximize();
+
         WebDriverWait wait1 = new WebDriverWait(driver, 25);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[12]/a/div/div/div/img")));
-//        driver.findElement(By.id("Home_Ancillary_0")).click();
-//        //WebDriverWait wait1 = new WebDriverWait(driver, 20);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
-//        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[12]/a/div/div/div/img")));       
         driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[12]/a/div/div/div/img")).click();
 
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Seafood"), true);
+        driver.navigate().back();
     }
 
     @Test
     public void testGameMeatPage() throws Exception {
-        driver.get("https://www.costco.com/meat.html");
-        driver.manage().window().maximize();
         WebDriverWait wait1 = new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[14]/a/div/div/div/img")));
-//        driver.findElement(By.id("Home_Ancillary_0")).click();
-//        //WebDriverWait wait1 = new WebDriverWait(driver, 20);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")));
-//        driver.findElement(By.xpath("//img[contains(@src,'https://mobilecontent.costco.com/live/resource/img/static-us-tiles/21w988-grocery-category-meat.png')]")).click();
         driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[3]/div[2]/div/div[2]/div[2]/div[14]/a/div/div/div/img")).click();
 
         assertEquals(driver.findElement(By.id("category-name-header")).getText().contains("Meat & Seafood"), true);
+        driver.navigate().back();
     }
 
 }

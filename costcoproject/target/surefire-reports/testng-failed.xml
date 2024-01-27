@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [test.com.CheckingLinkToPhotoCategoryTest]" verbose="0">
-  <test name="Command line test(failed)">
-    <classes>
-      <class name="test.com.CheckingLinkToPhotoCategoryTest">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="testCart"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
-    </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [test.com.CheckingLinkToPhotoCategoryTest] -->
-=======
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="test.com.EmptyCartCheckoutTest">
+      <class name="test.com.BestSellersInMeatSeaFoodSectionTest">
         <methods>
+          <include name="testItemDescription"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownMethod"/>
           <include name="setUpClass"/>
           <include name="setUpMethod"/>
-          <include name="tearDownMethod"/>
-          <include name="testCart"/>
-          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- test.com.EmptyCartCheckoutTest -->
+      </class> <!-- test.com.BestSellersInMeatSeaFoodSectionTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
->>>>>>> 2b82bc71a3f316ac9d3f4bdd3a12a1b1403f91cf

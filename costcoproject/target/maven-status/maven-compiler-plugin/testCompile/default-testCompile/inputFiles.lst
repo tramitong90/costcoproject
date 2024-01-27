@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\ModifyingCartItemsTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\AddToCartTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\ListOfProductInMeatSeafoodTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\PagesByCategoryFilterInGroceryTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\CheckingLinkToPhotoCategoryTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\EmptyCartCheckoutTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\BestSellersInMeatSeaFoodSectionTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\RemoveFromCartTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\SectionInMeatSeaFoodPageTest.java
-C:\Users\pahan\Costco\costcoproject\costcoproject\src\test\java\test\com\PagesByCategoryinGroceryTest.java
-=======
-C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test\com\SaveForLater_RemoveItemTest.java
 C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test\com\FileUtil.java
 C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test\com\PagesByCategoryFilterInGroceryTest.java
 C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test\com\AddtolistTest.java
@@ -27,4 +14,3 @@ C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test
 C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test\com\ModifyingCartItemsTest.java
 C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test\com\AddToCartTest.java
 C:\Users\mitra\costcofinalproject\costcoproject\costcoproject\src\test\java\test\com\SigninTest.java
->>>>>>> 2b82bc71a3f316ac9d3f4bdd3a12a1b1403f91cf

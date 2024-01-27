@@ -1,167 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="1" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2024-01-26T23:59:17Z" name="test.com.CheckingLinkToPhotoCategoryTest" finished-at="2024-01-26T23:59:36Z" duration-ms="19139">
+  <suite started-at="2024-01-27T20:46:09Z" name="Surefire suite" finished-at="2024-01-27T20:46:16Z" duration-ms="6562">
     <groups>
     </groups>
-    <test started-at="2024-01-26T23:59:17Z" name="Command line test" finished-at="2024-01-26T23:59:36Z" duration-ms="19139">
-      <class name="test.com.CheckingLinkToPhotoCategoryTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@5bfbf16f]" started-at="2024-01-26T18:59:17Z" name="setUpClass" finished-at="2024-01-26T18:59:17Z" duration-ms="14" status="PASS">
+    <test started-at="2024-01-27T20:46:09Z" name="Surefire test" finished-at="2024-01-27T20:46:16Z" duration-ms="6562">
+      <class name="test.com.SectionInMeatSeaFoodPageTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-27T14:46:09Z" name="setUpClass" finished-at="2024-01-27T14:46:09Z" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@5bfbf16f]" started-at="2024-01-26T18:59:17Z" name="setUpMethod" finished-at="2024-01-26T18:59:20Z" duration-ms="2327" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-27T14:46:09Z" name="setUpMethod" finished-at="2024-01-27T14:46:10Z" duration-ms="1328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testCart()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@5bfbf16f]" started-at="2024-01-26T18:59:20Z" name="testCart" finished-at="2024-01-26T18:59:36Z" duration-ms="16191" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="button" id="add-to-cart-btn" automation-id="addToCartButton" name="add-to-cart" value="Out of Stock" class="primary-button-v2 out-of-stock" disabled="disabled"> is not clickable at point (1180, 463). Other element would receive the click: <div id="add-to-cart" class="col-xs-12 add-to-cart-v2  interaction-element" style="">...</div>
-  (Session info: chrome=120.0.6099.227)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-726FUS1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f0261b0b4d7aadf0d22bc78d9f9b0ac]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="button" id="add-to-cart-btn" automation-id="addToCartButton" name="add-to-cart" value="Out of Stock" class="primary-button-v2 out-of-stock" disabled="disabled"> is not clickable at point (1180, 463). Other element would receive the click: <div id="add-to-cart" class="col-xs-12 add-to-cart-v2  interaction-element" style="">...</div>
-  (Session info: chrome=120.0.6099.227)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-726FUS1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f0261b0b4d7aadf0d22bc78d9f9b0ac
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at test.com.CheckingLinkToPhotoCategoryTest.testCart(CheckingLinkToPhotoCategoryTest.java:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-=======
-  <suite started-at="2024-01-26T19:48:31Z" name="Surefire suite" finished-at="2024-01-26T19:48:58Z" duration-ms="26424">
-    <groups>
-    </groups>
-    <test started-at="2024-01-26T19:48:31Z" name="Surefire test" finished-at="2024-01-26T19:48:58Z" duration-ms="26424">
-      <class name="test.com.EmptyCartCheckoutTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-26T13:48:31Z" name="setUpClass" finished-at="2024-01-26T13:48:31Z" duration-ms="8" status="PASS">
+        <test-method signature="testSectionInMeatPage()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-27T14:46:10Z" name="testSectionInMeatPage" finished-at="2024-01-27T14:46:15Z" duration-ms="5038" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-26T13:48:31Z" name="setUpMethod" finished-at="2024-01-26T13:48:32Z" duration-ms="1285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="testCart()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-26T13:48:32Z" name="testCart" finished-at="2024-01-26T13:48:57Z" duration-ms="25014" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: add-to-cart-btn (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '169.254.123.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af865d1f2ac1a3e5909e33dfa5002c0c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: add-to-cart-btn (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-37HMM6Q', ip: '169.254.123.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\mitra\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af865d1f2ac1a3e5909e33dfa5002c0c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at test.com.EmptyCartCheckoutTest.testCart(EmptyCartCheckoutTest.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
->>>>>>> 2b82bc71a3f316ac9d3f4bdd3a12a1b1403f91cf
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-<<<<<<< HEAD
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCart -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@5bfbf16f]" started-at="2024-01-26T18:59:36Z" name="tearDownMethod" finished-at="2024-01-26T18:59:36Z" duration-ms="586" status="PASS">
+        </test-method> <!-- testSectionInMeatPage -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-27T14:46:15Z" name="tearDownMethod" finished-at="2024-01-27T14:46:16Z" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.CheckingLinkToPhotoCategoryTest@5bfbf16f]" started-at="2024-01-26T18:59:36Z" name="tearDownClass" finished-at="2024-01-26T18:59:36Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.SectionInMeatSeaFoodPageTest@517cd4b]" started-at="2024-01-27T14:46:16Z" name="tearDownClass" finished-at="2024-01-27T14:46:16Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
-=======
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCart -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-26T13:48:57Z" name="tearDownMethod" finished-at="2024-01-26T13:48:58Z" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-26T13:48:58Z" name="tearDownClass" finished-at="2024-01-26T13:48:58Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.EmptyCartCheckoutTest -->
+      </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
->>>>>>> 2b82bc71a3f316ac9d3f4bdd3a12a1b1403f91cf
 </testng-results>

@@ -20,9 +20,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  */
 public class FileUtil {
     
-    public static Product getData() throws FileNotFoundException, IOException{
-        
-        
+    public static Travel getData() throws FileNotFoundException, IOException{
         
         FileInputStream inputStream = new FileInputStream(new File("D:\\Data\\productdetails.xlsx"));
         Workbook workbook = new XSSFWorkbook(inputStream);
@@ -31,19 +29,43 @@ public class FileUtil {
         
         Row r = firstSheet.getRow(1);
         Cell c = r.getCell(0);
-        String name = c.getStringCellValue();
+        String destinations = c.getStringCellValue();
         
         r = firstSheet.getRow(1);
         c = r.getCell(1);
-        String price = c.getNumericCellValue() + "";
+        String checkIn = c.getNumericCellValue() + "";
         
         r = firstSheet.getRow(1);
         c = r.getCell(2);
-        String description = c.getStringCellValue();
+        String checkOut = c.getStringCellValue();
         
-        Product product = new Product(name, price, description);
+        r = firstSheet.getRow(1);
+        c = r.getCell(3);
+        double room = c.getNumericCellValue();
+        
+        r = firstSheet.getRow(1);
+        c = r.getCell(4);
+        double adult = c.getNumericCellValue();
+        
+        r = firstSheet.getRow(1);
+        c = r.getCell(5);
+        double children = c.getNumericCellValue();
+        
+        r = firstSheet.getRow(1);
+        c = r.getCell(6);
+        double ageChild1 = c.getNumericCellValue();
+        
+        r = firstSheet.getRow(1);
+        c = r.getCell(7);
+        double ageChild2 = c.getNumericCellValue();
+        
+        r = firstSheet.getRow(1);
+        c = r.getCell(8);
+        double ageChild3 = c.getNumericCellValue();
+        
+        Travel travel = new Travel(destinations, checkIn, checkOut, room, adult, children, ageChild1, ageChild2, ageChild3);
         
         
-        return product;
+        return travel;
     }
 }

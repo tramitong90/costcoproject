@@ -51,19 +51,19 @@ public class ListOfProductInMeatSeafoodTest {
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
        // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get("https://www.costco.com/meat.html");
         
     }
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
         driver.close();
+        Thread.sleep(2000);
     }
 
-    @Test
-    public void testAddToListButton() throws Exception {
-        driver.manage().window().maximize();
-        driver.get("https://www.costco.com/meat.html");
-        
+    @Test (priority = 1)
+    public void testAddToListButton() throws Exception {   
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1500)", "");
         
@@ -79,11 +79,9 @@ public class ListOfProductInMeatSeafoodTest {
         
     }
     
-    @Test
+    @Test(priority = 2)
     public void testSelectingItem() throws Exception {
-        driver.manage().window().maximize();
-        driver.get("https://www.costco.com/meat.html");
-        
+
         WebDriverWait wait1 =new WebDriverWait(driver, 20);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Crescent Foods Halal Hand-Cut Beef, Chicken Combo Pack - 14 Total Packs, 13.5 Lbs. Total")));
         driver.findElement(By.linkText("Crescent Foods Halal Hand-Cut Beef, Chicken Combo Pack - 14 Total Packs, 13.5 Lbs. Total")).click();
@@ -91,19 +89,4 @@ public class ListOfProductInMeatSeafoodTest {
         assertEquals(driver.findElement(By.id("product-details")).getText().contains("Crescent Foods Halal Hand-Cut Beef, Chicken Combo Pack - 14 Total Packs, 13.5 Lbs. Total"), true);
        
     }
- 
-//    @Test
-//    public void testProductInfor() throws Exception {
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
-//        js.executeScript("window.scrollBy(0,1500)", "");
-//        
-//        WebDriverWait wait1 =new WebDriverWait(driver, 30);
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"productTile_100421889\"]/div[2]/div[2]/span/a")));
-//        String actual = driver.findElement(By.xpath("//*[@id=\"productTile_100421889\"]/div[2]/div[2]/span/a")).getText();
-//        assertEquals(actual, FileUtil.getData().name);
-//        
-//        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("price-1260562")));
-//        String actualPrice = driver.findElement(By.id("price-1260562")).getText();
-//        assertEquals(actual, FileUtil.getData().price);
-//    }
 }
