@@ -1,164 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Command line suite]" verbose="0">
+<suite name="Failed suite [test.com.CheckingLinkToPhotoCategoryTest]" verbose="0">
   <test name="Command line test(failed)">
     <classes>
-      <class name="test.com.PagesByCategoryinGroceryTest">
-        <methods>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-        </methods>
-      </class> <!-- test.com.PagesByCategoryinGroceryTest -->
-      <class name="test.com.RemoveFromCartTest">
-        <methods>
-          <include name="tearDownMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="setUpMethod"/>
-        </methods>
-      </class> <!-- test.com.RemoveFromCartTest -->
-<<<<<<< HEAD
-      <class name="test.com.SectionInMeatSeaFoodPageTest">
-        <methods>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-        </methods>
-      </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
       <class name="test.com.CheckingLinkToPhotoCategoryTest">
         <methods>
           <include name="tearDownClass"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
-      <class name="test.com.EmptyCartCheckoutTest">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- test.com.EmptyCartCheckoutTest -->
-      <class name="test.com.AddToCartTest">
-        <methods>
-          <include name="tearDownMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpMethod"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- test.com.AddToCartTest -->
-      <class name="test.com.ModifyingCartItemsTest">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpMethod"/>
-        </methods>
-      </class> <!-- test.com.ModifyingCartItemsTest -->
-=======
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
-      <class name="test.com.BestSellersInMeatSeaFoodSectionTest">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpClass"/>
-          <include name="setUpMethod"/>
-        </methods>
-      </class> <!-- test.com.BestSellersInMeatSeaFoodSectionTest -->
-<<<<<<< HEAD
-      <class name="test.com.PagesByCategoryFilterInGroceryTest">
-        <methods>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-          <include name="testPoultryPage"/>
-          <include name="testSeaFoodPage"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-        </methods>
-=======
-      <class name="test.com.EmptyCartCheckoutTest">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="setUpMethod"/>
           <include name="testCart"/>
-        </methods>
-      </class> <!-- test.com.EmptyCartCheckoutTest -->
-      <class name="test.com.SectionInMeatSeaFoodPageTest">
-        <methods>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-        </methods>
-      </class> <!-- test.com.SectionInMeatSeaFoodPageTest -->
-      <class name="test.com.ModifyingCartItemsTest">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpMethod"/>
-        </methods>
-      </class> <!-- test.com.ModifyingCartItemsTest -->
-      <class name="test.com.CheckingLinkToPhotoCategoryTest">
-        <methods>
-          <include name="tearDownClass"/>
           <include name="setUpMethod"/>
           <include name="tearDownMethod"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- test.com.CheckingLinkToPhotoCategoryTest -->
-      <class name="test.com.AddToCartTest">
-        <methods>
-          <include name="tearDownMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpMethod"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- test.com.AddToCartTest -->
-      <class name="test.com.PagesByCategoryinGroceryTest">
-        <methods>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="tearDownMethod"/>
-        </methods>
-      </class> <!-- test.com.PagesByCategoryinGroceryTest -->
-      <class name="test.com.ListOfProductInMeatSeafoodTest">
-        <methods>
-          <include name="testAddToListButton"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- test.com.ListOfProductInMeatSeafoodTest -->
-      <class name="test.com.RemoveFromCart2Test">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="setUpMethod"/>
-          <include name="testRemoveFromCart2"/>
-          <include name="tearDownMethod"/>
-        </methods>
-      </class> <!-- test.com.RemoveFromCart2Test -->
-      <class name="test.com.PagesByCategoryFilterInGroceryTest">
-        <methods>
-          <include name="setUpMethod"/>
-          <include name="testPlantBasedProteinPage"/>
-          <include name="testPoultryPage"/>
-          <include name="testSeaFoodPage"/>
-          <include name="setUpClass"/>
-          <include name="testBeefPage"/>
-          <include name="testPorkPage"/>
-          <include name="testLambPage"/>
-        </methods>
->>>>>>> d1af8fcc52c225c4909b7faa5f54e6946b79e6ee
-      </class> <!-- test.com.PagesByCategoryFilterInGroceryTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+</suite> <!-- Failed suite [test.com.CheckingLinkToPhotoCategoryTest] -->
