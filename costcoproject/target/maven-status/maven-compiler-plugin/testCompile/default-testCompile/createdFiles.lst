@@ -12,5 +12,6 @@ test\com\AddtolistTest.class
 test\com\FileUtil.class
 test\com\BestSellersInMeatSeaFoodSectionTest.class
 test\com\CheckingLinkToPhotoCategoryTest.class
+test\com\TravelTest.class
 test\com\SectionInMeatSeaFoodPageTest.class
 test\com\EmptyCartCheckoutTest.class

@@ -12,14 +12,14 @@ public class Travel {
     public String destination;
     public String checkIn;
     public String checkOut;
-    public double numOfRoom;
-    public double numOfAdult;
-    public double numOfChild;
-    public double ageOfChild1;
-    public double ageOfChild2;
-    public double ageOfChild3;
+    public String numOfRoom;
+    public String numOfAdult;
+    public String numOfChild;
+    public String ageOfChild1;
+    public String ageOfChild2;
+    public String ageOfChild3;
 
-    public Travel(String destination, String checkIn, String checkOut, double numOfRoom, double numOfAdult, double numOfChild, double ageOfChild1, double ageOfChild2, double ageOfChild3) {
+    public Travel(String destination, String checkIn, String checkOut, String numOfRoom, String numOfAdult, String numOfChild, String ageOfChild1, String ageOfChild2, String ageOfChild3) {
         this.destination = destination;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
@@ -55,51 +55,51 @@ public class Travel {
         this.checkOut = checkOut;
     }
 
-    public double getNumOfRoom() {
+    public String getNumOfRoom() {
         return numOfRoom;
     }
 
-    public void setNumOfRoom(double numOfRoom) {
+    public void setNumOfRoom(String numOfRoom) {
         this.numOfRoom = numOfRoom;
     }
 
-    public double getNumOfAdult() {
+    public String getNumOfAdult() {
         return numOfAdult;
     }
 
-    public void setNumOfAdult(double numOfAdult) {
+    public void setNumOfAdult(String numOfAdult) {
         this.numOfAdult = numOfAdult;
     }
 
-    public double getNumOfChild() {
+    public String getNumOfChild() {
         return numOfChild;
     }
 
-    public void setNumOfChild(double numOfChild) {
+    public void setNumOfChild(String numOfChild) {
         this.numOfChild = numOfChild;
     }
 
-    public double getAgeOfChild1() {
+    public String getAgeOfChild1() {
         return ageOfChild1;
     }
 
-    public void setAgeOfChild1(double ageOfChild1) {
+    public void setAgeOfChild1(String ageOfChild1) {
         this.ageOfChild1 = ageOfChild1;
     }
 
-    public double getAgeOfChild2() {
+    public String getAgeOfChild2() {
         return ageOfChild2;
     }
 
-    public void setAgeOfChild2(double ageOfChild2) {
+    public void setAgeOfChild2(String ageOfChild2) {
         this.ageOfChild2 = ageOfChild2;
     }
 
-    public double getAgeOfChild3() {
+    public String getAgeOfChild3() {
         return ageOfChild3;
     }
 
-    public void setAgeOfChild3(double ageOfChild3) {
+    public void setAgeOfChild3(String ageOfChild3) {
         this.ageOfChild3 = ageOfChild3;
     }
 
