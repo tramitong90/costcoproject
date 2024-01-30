@@ -6,6 +6,7 @@ package test.com;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -48,7 +49,7 @@ public class CartBoundaryTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.close();
+    driver.close ();
     }
     
     @Test
@@ -65,6 +66,13 @@ public class CartBoundaryTest {
     driver.findElement(By.id("quantity_1")).sendKeys("999");
     driver.findElement(By.id("cart-body")).click();
     
-    assertEquals(driver.findElement(By.xpath("//*[@id=\"cart-body\"]")).getText().contains("Item 990929 is out of stock or unavailable to order"), false);
+//    assertEquals(driver.findElement(By.xpath("//*[@id=\\\"cart-body\\\"]\")")).WebDriverWait );
+    WebDriverWait wait1 = new WebDriverWait(driver, 10, 1000);
+
+    wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"errquantity_\"]/p[2]")));
+    WebElement element = driver.findElement(By.xpath("//*[@id=\"errquantity_\"]/p[2]")); 
+
+    assertEquals(element.getText().contains("Item 990929 is out of stock or unavailable to order"), true);
+    
   }
 }
