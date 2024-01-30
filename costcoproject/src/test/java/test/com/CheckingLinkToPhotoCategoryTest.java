@@ -10,6 +10,8 @@ import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -61,6 +63,8 @@ public class CheckingLinkToPhotoCategoryTest {
     public void testCheckingLinkToPhotoCategory() {//*[@id="crumbs_ul"]/li[2]/span
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
+        WebDriverWait wait = new WebDriverWait(driver, 25);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"navigation-widget\"]/div/nav/div[8]/a")));
         driver.findElement(By.xpath("//*[@id=\"navigation-widget\"]/div/nav/div[8]/a")).click();
     
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div/div[1]/div/ol/li[2]/span")).getText().contains("Photo"), true);

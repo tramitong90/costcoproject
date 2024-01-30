@@ -52,14 +52,14 @@ public class RemoveFromCartTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.quit();
+       // driver.quit();
     }
 
     @Test
     public void testRemoveFromCart() throws InterruptedException {
-        driver.get("https://www.costco.com/");
+        driver.get("https://www.costco.com/sony-85%22-class---x90cl-series---4k-uhd-led-lcd-tv---allstate-3-year-protection-plan-bundle-included-for-5-years-of-total-coverage*.product.4000186642.html");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div/div[5]/div[5]")).click();
+        //driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div/div[5]/div[5]")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 20);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[automation-id='addToCartButton']")));
         driver.findElement(By.cssSelector("input[automation-id='addToCartButton']")).click();
@@ -70,6 +70,7 @@ public class RemoveFromCartTest {
         driver.findElement(By.cssSelector("span[automation-id='removeItemLink_1']")).click();
         wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[automation-id='removeItemLink_2']")));
         driver.findElement(By.cssSelector("span[automation-id='removeItemLink_2']")).click();
+        Thread.sleep(2000);
         driver.navigate().refresh();
         
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")));
