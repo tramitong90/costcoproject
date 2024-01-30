@@ -62,7 +62,7 @@ public class SigninTest {
     @Test
     public void TestSignin() throws Exception {
         driver.get("https://www.costco.com");
-        WebDriverWait wait0 = new WebDriverWait(driver, 10);  //20 sec
+        WebDriverWait wait0 = new WebDriverWait(driver, 25);  //20 sec
         wait0.until(ExpectedConditions.visibilityOfElementLocated(By.id("header_sign_in")));
         driver.findElement(By.id("header_sign_in")).click();
         driver.findElement(By.id("signInName")).click();

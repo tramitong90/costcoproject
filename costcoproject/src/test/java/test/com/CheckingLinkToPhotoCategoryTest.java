@@ -64,8 +64,9 @@ public class CheckingLinkToPhotoCategoryTest {
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
         WebDriverWait wait = new WebDriverWait(driver, 25);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"navigation-widget\"]/div/nav/div[8]/a")));
-        driver.findElement(By.xpath("//*[@id=\"navigation-widget\"]/div/nav/div[8]/a")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Photo")));
+        driver.findElement(By.linkText("Photo")).click();
+        
     
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div/div[1]/div/ol/li[2]/span")).getText().contains("Photo"), true);
         
@@ -75,6 +76,7 @@ public class CheckingLinkToPhotoCategoryTest {
             Logger.getLogger(CheckingLinkToPhotoCategoryTest.class.getName()).log(Level.SEVERE, null, ex);
         }
         driver.close();
+        
     }
 
 }

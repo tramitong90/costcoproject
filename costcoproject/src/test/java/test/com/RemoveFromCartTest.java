@@ -11,7 +11,9 @@ import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import static org.openqa.selenium.By.id;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
@@ -68,10 +70,15 @@ public class RemoveFromCartTest {
         driver.findElement(By.linkText("View Cart")).click();
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[automation-id='removeItemLink_1']")));
         driver.findElement(By.cssSelector("span[automation-id='removeItemLink_1']")).click();
-        wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[automation-id='removeItemLink_2']")));
-        driver.findElement(By.cssSelector("span[automation-id='removeItemLink_2']")).click();
-        Thread.sleep(2000);
+        //wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[automation-id='removeItemLink_2']")));
+        
+        WebElement element = driver.findElement(By.cssSelector("span[automation-id='removeItemLink_2']"));
+        Actions action = new Actions(driver);
+        action.moveToElement(element).build().perform();
+        element.click();
+        
         driver.navigate().refresh();
+        Thread.sleep(2000);
         
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")));
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")).getText().equalsIgnoreCase("Your shopping cart is empty. Please add at least one item to your cart before checking out."), true);

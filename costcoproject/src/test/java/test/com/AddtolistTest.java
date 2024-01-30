@@ -76,13 +76,18 @@ public class AddtolistTest {
         driver.findElement(By.id("search-field")).clear();
         driver.findElement(By.id("search-field")).sendKeys("airpods pro (2nd generation)");
         driver.findElement(By.xpath("//form[@id='formcatsearch']/div[2]/button/i")).click();
+        JavascriptExecutor jse1 = (JavascriptExecutor) driver;
+        jse1.executeScript("window.scrollBy(0,300)");
+        
         WebDriverWait wait=new WebDriverWait(driver, 10);  //20 sec
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("addbutton-0")));
         driver.findElement(By.id("addbutton-0")).click();
+        
+    
         WebDriverWait wait2=new WebDriverWait(driver, 10);  //20 sec
-        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='cart-d']/div/div")));
-        driver.findElement(By.xpath("//a[@id='cart-d']/div/div")).click();
-        JavascriptExecutor jse1 = (JavascriptExecutor) driver;
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div [automation-id = 'addedToCartMessage_0']")));
+        driver.findElement(By.id("cart-d")).click();
+        
         jse1.executeScript("window.scrollBy(0,300)");
         driver.findElement(By.xpath("//*[@id=\"order-item_1\"]/div/div[5]/div[1]/button[1]")).click();
         WebDriverWait w2 = new WebDriverWait(driver, 10);

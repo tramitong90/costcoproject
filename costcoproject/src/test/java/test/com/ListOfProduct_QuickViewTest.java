@@ -66,7 +66,9 @@ public class ListOfProduct_QuickViewTest {
         WebElement element = driver.findElement(By.xpath("//div[@id='productTile_4000149679']/div[2]/div/div/div"));
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
-        driver.findElement(By.xpath("//div[@id='productTile_4000149679']/div[2]/div/div/div")).click();
+        //driver.findElement(By.xpath("//div[@id='productTile_4000149679']/div[2]/div/div/div")).click();
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element);
         
         WebDriverWait wait1 =new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("costcoModalTitle")));

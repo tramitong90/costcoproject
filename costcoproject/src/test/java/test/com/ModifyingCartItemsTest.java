@@ -79,11 +79,12 @@ public class ModifyingCartItemsTest {
        
         wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("quantity_1")));
         assertEquals(driver.findElement(By.id("quantity_1")).getAttribute("value"), "2");
-        Thread.sleep(4000);
+        
     }
     
      @Test
     public void testModifyingCartItemsDecrease() throws Exception {
+        Thread.sleep(4000);
         WebDriverWait wait2 = new WebDriverWait(driver, 25);
         wait2.until(ExpectedConditions.elementToBeClickable(By.id("sub-1")));
         driver.findElement(By.id("sub-1")).click();
