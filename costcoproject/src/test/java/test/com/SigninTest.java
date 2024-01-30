@@ -56,7 +56,7 @@ public class SigninTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test

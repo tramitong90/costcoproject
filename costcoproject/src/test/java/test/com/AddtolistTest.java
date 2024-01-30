@@ -66,7 +66,7 @@ public class AddtolistTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-         //driver.quit();
+         driver.quit();
     }
 
     @Test

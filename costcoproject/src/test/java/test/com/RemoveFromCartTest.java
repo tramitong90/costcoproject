@@ -52,7 +52,7 @@ public class RemoveFromCartTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-       // driver.quit();
+       driver.quit();
     }
 
     @Test
