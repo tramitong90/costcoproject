@@ -29,7 +29,7 @@ public class FileUtil {
         Cell c = r.getCell(1); //username value
         String username = c.getStringCellValue();
         System.out.println("username =" + username);
-        r = Sheet1.getRow(0);
+        r = Sheet1.getRow(1);
         c = r.getCell(1); //password value
         String password = c.getStringCellValue();
         System.out.println("password =" + password);
