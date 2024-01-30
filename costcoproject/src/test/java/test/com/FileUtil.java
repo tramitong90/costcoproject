@@ -22,7 +22,7 @@ public class FileUtil {
 
     public static LogIn ReadLogin() throws Exception {
         LogIn ln = null;
-        FileInputStream inputStream = new FileInputStream(new File("C:\\Users\\navat\\OneDrive\\Desktop\\bootcamp\\Selenium\\login.xlsx"));
+        FileInputStream inputStream = new FileInputStream(new File("C:\\Users\\mitra\\costcofinalproject\\costcoproject\\login.xlsx"));
         Workbook workbook = new XSSFWorkbook(inputStream);
         Sheet Sheet1 = workbook.getSheetAt(0);
         Row r = Sheet1.getRow(0);
