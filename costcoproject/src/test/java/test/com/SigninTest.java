@@ -4,7 +4,6 @@ package test.com;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
  */
-
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -12,6 +11,7 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
@@ -62,9 +62,12 @@ public class SigninTest {
     @Test
     public void TestSignin() throws Exception {
         driver.get("https://www.costco.com");
-        WebDriverWait wait0 = new WebDriverWait(driver, 25);  //20 sec
-        wait0.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Sign In / Register']")));
-        driver.findElement(By.xpath("//a[text()='Sign In / Register']")).click();
+//        WebDriverWait wait0 = new WebDriverWait(driver, 25);  //20 sec
+//        wait0.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Sign In / Register']")));
+        WebElement signinLink = driver.findElement(By.xpath("//a[text()='Sign In / Register']"));
+        Actions action = new Actions(driver);
+        action.moveToElement(signinLink).build().perform();
+        action.click().build().perform();
         driver.findElement(By.id("signInName")).click();
         driver.findElement(By.id("signInName")).sendKeys(FileUtil.ReadLogin().getUsername());
         driver.findElement(By.id("password")).click();

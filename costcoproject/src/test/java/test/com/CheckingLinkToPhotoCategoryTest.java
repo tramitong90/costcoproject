@@ -9,7 +9,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
@@ -50,7 +52,7 @@ public class CheckingLinkToPhotoCategoryTest {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     @AfterMethod
@@ -63,10 +65,13 @@ public class CheckingLinkToPhotoCategoryTest {
     public void testCheckingLinkToPhotoCategory() {//*[@id="crumbs_ul"]/li[2]/span
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, 25);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Photo']")));
-        driver.findElement(By.xpath("//a[text()='Photo']")).click();
         
+//        WebDriverWait wait = new WebDriverWait(driver, 25);
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Photo']")));
+        WebElement element = driver.findElement(By.xpath("//a[text()='Photo']"));
+        Actions action = new Actions(driver);
+        action.moveToElement(element).build().perform();
+        action.click().build().perform();
     
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div/div[1]/div/ol/li[2]/span")).getText().contains("Photo"), true);
         

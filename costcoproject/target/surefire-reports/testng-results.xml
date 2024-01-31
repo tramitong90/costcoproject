@@ -2,32 +2,32 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-31T16:22:38Z" name="Surefire suite" finished-at="2024-01-31T16:23:02Z" duration-ms="24828">
+  <suite started-at="2024-01-31T17:18:44Z" name="Surefire suite" finished-at="2024-01-31T17:19:02Z" duration-ms="17722">
     <groups>
     </groups>
-    <test started-at="2024-01-31T16:22:38Z" name="Surefire test" finished-at="2024-01-31T16:23:02Z" duration-ms="24828">
-      <class name="test.com.EmptyCartCheckoutTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-31T10:22:38Z" name="setUpClass" finished-at="2024-01-31T10:22:38Z" duration-ms="8" status="PASS">
+    <test started-at="2024-01-31T17:18:44Z" name="Surefire test" finished-at="2024-01-31T17:19:02Z" duration-ms="17722">
+      <class name="test.com.SigninTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.SigninTest@517cd4b]" started-at="2024-01-31T11:18:44Z" name="setUpClass" finished-at="2024-01-31T11:18:44Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-31T10:22:38Z" name="setUpMethod" finished-at="2024-01-31T10:22:39Z" duration-ms="1306" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.SigninTest@517cd4b]" started-at="2024-01-31T11:18:44Z" name="setUpMethod" finished-at="2024-01-31T11:18:45Z" duration-ms="1436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testCart()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-31T10:22:39Z" name="testCart" finished-at="2024-01-31T10:23:02Z" duration-ms="23303" status="PASS">
+        <test-method signature="TestSignin()[pri:0, instance:test.com.SigninTest@517cd4b]" started-at="2024-01-31T11:18:45Z" name="TestSignin" finished-at="2024-01-31T11:19:01Z" duration-ms="16027" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCart -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-31T10:23:02Z" name="tearDownMethod" finished-at="2024-01-31T10:23:02Z" duration-ms="202" status="PASS">
+        </test-method> <!-- TestSignin -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.SigninTest@517cd4b]" started-at="2024-01-31T11:19:01Z" name="tearDownMethod" finished-at="2024-01-31T11:19:02Z" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.EmptyCartCheckoutTest@517cd4b]" started-at="2024-01-31T10:23:02Z" name="tearDownClass" finished-at="2024-01-31T10:23:02Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.SigninTest@517cd4b]" started-at="2024-01-31T11:19:02Z" name="tearDownClass" finished-at="2024-01-31T11:19:02Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- test.com.EmptyCartCheckoutTest -->
+      </class> <!-- test.com.SigninTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

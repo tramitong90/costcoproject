@@ -85,7 +85,7 @@ public class RemoveFromCartTest {
         element.click();
         
         driver.navigate().refresh();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")));
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")).getText().equalsIgnoreCase("Your shopping cart is empty. Please add at least one item to your cart before checking out."), true);
