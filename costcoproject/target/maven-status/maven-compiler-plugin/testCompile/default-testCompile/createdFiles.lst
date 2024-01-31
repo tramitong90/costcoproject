@@ -4,11 +4,9 @@ test\com\SaveForLaterTest.class
 test\com\LogIn.class
 test\com\ListOfProduct_QuickViewTest.class
 test\com\PagesByCategoryFilterInGroceryTest.class
-test\com\AddToCartTest.class
+test\com\ShoppingCartTest.class
 test\com\ListOfProductInMeatSeafoodTest.class
 test\com\PagesByCategoryinGroceryTest.class
-test\com\ModifyingCartItemsTest.class
-test\com\AddtolistTest.class
 test\com\FileUtil.class
 test\com\BestSellersInMeatSeaFoodSectionTest.class
 test\com\CheckingLinkToPhotoCategoryTest.class

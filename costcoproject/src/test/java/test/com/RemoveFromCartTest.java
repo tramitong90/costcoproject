@@ -67,10 +67,17 @@ public class RemoveFromCartTest {
         driver.findElement(By.cssSelector("input[automation-id='addToCartButton']")).click();
 
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View Cart")));
-        driver.findElement(By.linkText("View Cart")).click();
+        WebElement cart = driver.findElement(By.linkText("View Cart"));
+        cart.click();
+        
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[automation-id='removeItemLink_1']")));
         driver.findElement(By.cssSelector("span[automation-id='removeItemLink_1']")).click();
-        //wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[automation-id='removeItemLink_2']")));
+        
+        
+        driver.navigate().refresh();
+        
+        //Thread.sleep(1000);
+        wait1.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[automation-id='removeItemLink_2']")));
         
         WebElement element = driver.findElement(By.cssSelector("span[automation-id='removeItemLink_2']"));
         Actions action = new Actions(driver);

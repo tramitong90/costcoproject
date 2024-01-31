@@ -63,8 +63,8 @@ public class SigninTest {
     public void TestSignin() throws Exception {
         driver.get("https://www.costco.com");
         WebDriverWait wait0 = new WebDriverWait(driver, 25);  //20 sec
-        wait0.until(ExpectedConditions.visibilityOfElementLocated(By.id("header_sign_in")));
-        driver.findElement(By.id("header_sign_in")).click();
+        wait0.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Sign In / Register']")));
+        driver.findElement(By.xpath("//a[text()='Sign In / Register']")).click();
         driver.findElement(By.id("signInName")).click();
         driver.findElement(By.id("signInName")).sendKeys(FileUtil.ReadLogin().getUsername());
         driver.findElement(By.id("password")).click();

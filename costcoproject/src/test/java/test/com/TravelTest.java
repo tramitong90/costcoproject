@@ -100,40 +100,4 @@ public class TravelTest {
         assertEquals(element3.isEnabled(), true);
     }
     
-//    @Test
-//    public void testMultipleWidgets() throws Exception {
-//
-//        WebElement element = driver.findElement(By.id("hotels-tab-id"));
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
-//        js.executeScript("arguments[0].click();", element);
-//
-//        WebElement element1 = driver.findElement(By.id("hotelDestination"));
-//        js.executeScript("arguments[0].click();", element1);
-//
-//        // driver.findElement(By.xpath("//div[@id='hotel_destination_widget']/div/ul/li")).click();
-//        driver.findElement(By.id("hotelDestination")).clear();
-//        driver.findElement(By.id("hotelDestination")).sendKeys("Chicago, IL, US");
-//        driver.findElement(By.id("checkInDateWidget")).click();
-//        driver.findElement(By.id("checkInDateWidget")).clear();
-//        driver.findElement(By.id("checkInDateWidget")).sendKeys("02/24/2024");
-//        driver.findElement(By.id("checkOutDateWidget")).click();
-//        driver.findElement(By.id("checkOutDateWidget")).clear();
-//        driver.findElement(By.id("checkOutDateWidget")).sendKeys("02/28/2024");
-//        
-//        driver.findElement(By.id("hotelNumberOfRoomsWidget")).click();
-//        new Select(driver.findElement(By.id("hotelNumberOfRoomsWidget"))).selectByVisibleText("2");
-//        driver.findElement(By.id("hotelAdultsInRoomForWidget_1")).click();
-//        
-//        new Select(driver.findElement(By.id("hotelAdultsInRoomForWidget_1"))).selectByVisibleText("3 Adults");
-//        
-//        driver.findElement(By.id("hotelChildrenInRoomForWidget_1")).click();
-//        driver.findElement(By.id("hotelChildAgeForWidget_1_1")).click();
-//        new Select(driver.findElement(By.id("hotelChildAgeForWidget_1_1"))).selectByVisibleText("2 Years");
-//        driver.findElement(By.id("hotelChildAgeForWidget_1_2")).click();
-//        new Select(driver.findElement(By.id("hotelChildAgeForWidget_1_2"))).selectByVisibleText("1 Year");
-//        driver.findElement(By.id("hotelChildAgeForWidget_1_3")).click();
-//        new Select(driver.findElement(By.id("hotelChildAgeForWidget_1_3"))).selectByVisibleText("3 Years");
-//        driver.findElement(By.xpath("//div[@id='ageAndSubmitDiv']/div[2]/button")).click();
-//
-//    }
 }

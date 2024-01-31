@@ -3,15 +3,15 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="test.com.AddtolistTest">
+      <class name="test.com.EmptyCartCheckoutTest">
         <methods>
-          <include name="tearDownMethod"/>
-          <include name="setUpMethod"/>
-          <include name="testList"/>
-          <include name="tearDownClass"/>
           <include name="setUpClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="testCart"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- test.com.AddtolistTest -->
+      </class> <!-- test.com.EmptyCartCheckoutTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
