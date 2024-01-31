@@ -4,6 +4,9 @@
  */
 package test.com;
 
+import java.util.Iterator;
+import java.util.Set;
+import static java.util.Spliterators.iterator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

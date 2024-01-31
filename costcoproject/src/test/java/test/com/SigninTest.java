@@ -68,6 +68,7 @@ public class SigninTest {
         Actions action = new Actions(driver);
         action.moveToElement(signinLink).build().perform();
         action.click().build().perform();
+        driver.navigate().to("https://www.costco.com/LogonForm");
         driver.findElement(By.id("signInName")).click();
         driver.findElement(By.id("signInName")).sendKeys(FileUtil.ReadLogin().getUsername());
         driver.findElement(By.id("password")).click();

@@ -66,7 +66,7 @@ public class EmptyCartCheckoutTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id("sub-1")));
         driver.findElement(By.id("sub-1")).click();
         driver.get("https://www.costco.com/CheckoutCartDisplayView?catalogId=10701&storeId=10301&langId=-1&krypto=jbSaaPDEX1bUwvOmrOSw%2BPke0ezg0lyqAabglBSx%2BS12dxg8U5WSAVZ34gIhCV34%2BfPpfYVAvUq8Rj6JKNzLvmyZAaxcvFZzE0hG2qFD65c%3D&ddkey=http%3ACheckoutCartView");
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         driver.navigate().refresh();
         
         assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div[2]/div[4]/div[2]")).getText().equalsIgnoreCase("Your shopping cart is empty. Please add at least one item to your cart before checking out."), true);

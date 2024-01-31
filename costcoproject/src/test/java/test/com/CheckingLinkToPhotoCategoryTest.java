@@ -73,7 +73,9 @@ public class CheckingLinkToPhotoCategoryTest {
         action.moveToElement(element).build().perform();
         action.click().build().perform();
     
-        assertEquals(driver.findElement(By.xpath("/html/body/main/div[3]/div/div[1]/div/ol/li[2]/span")).getText().contains("Photo"), true);
+        String actualPage = driver.getCurrentUrl();
+        String expectedPage = "https://www.costco.com/photo.html";
+        assertEquals(actualPage, expectedPage);
         
         try {
             Thread.sleep(2000);
