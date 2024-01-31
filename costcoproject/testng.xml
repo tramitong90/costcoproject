@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+<suite name="costcoprojecttesting">
+    <test name="testngTest">
+        <classes>
+            <class name="test.com.BestSellersInMeatSeaFoodSectionTest/>
+            <class name="test.com.CheckingLinkToPhotoCategoryTest/>
+            <class name="test.com.EmptyCartCheckoutTest/>
+            <class name="test.com.ListOfProductInMeatSeafoodTest/>
+            <class name="test.com.ListOfProduct_QuickViewTest/>
+            <class name="test.com.PagesByCategoryFilterInGroceryTest/>
+            <class name="test.com.PagesByCategoryinGroceryTest/>
+            <class name="test.com.RemoveFromCartTest/>
+            <class name="test.com.SaveForLaterTest/>
+            <class name="test.com.ShoppingCartTest/>
+            <class name="test.com.SigninTest/>
+            <class name="test.com.TravelTest/>  
+        </classes>
+        
+    </test>
+</suite>
