@@ -73,7 +73,8 @@ public class ListOfProduct_QuickViewTest {
         action.click().build().perform();
 //        JavascriptExecutor executor = (JavascriptExecutor) driver;
 //        executor.executeScript("arguments[0].click();", element);
-        
+
+        Thread.sleep(2000);
         WebDriverWait wait1 =new WebDriverWait(driver, 25);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("costcoModalTitle")));
         assertEquals(driver.findElement(By.id("costcoModalTitle")).getText(), "Quick View");
