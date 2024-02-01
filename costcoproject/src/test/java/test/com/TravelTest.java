@@ -73,7 +73,7 @@ public class TravelTest {
 
         // driver.findElement(By.xpath("//div[@id='hotel_destination_widget']/div/ul/li")).click();
         driver.findElement(By.id("hotelDestination")).clear();
-        driver.findElement(By.id("hotelDestination")).sendKeys(FileUtil1.getData().destination);
+        driver.findElement(By.id("hotelDestination")).sendKeys(FileUtil1.getData().getDestination());
         driver.findElement(By.id("checkInDateWidget")).click();
         driver.findElement(By.id("checkInDateWidget")).clear();
         driver.findElement(By.id("checkInDateWidget")).sendKeys(FileUtil1.getData().getCheckIn());

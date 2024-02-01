@@ -4,6 +4,8 @@
  */
 package test.com;
 
+import com.mycompany.costcoproject.HomePageFile;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -59,34 +61,50 @@ public class CheckingLinkToPhotoCategoryTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.quit();
+        driver.close();
 
     }
-
     @Test
-    public void testCheckingLinkToPhotoCategory() throws InterruptedException {
-        driver.get("https://www.costco.com/");
+    public void testCheckingLinkToPhotoCategory() throws InterruptedException, IOException {
         driver.manage().window().maximize();
+        driver.get("https://www.costco.com/");
 
-        Thread.sleep(5000);
-//        WebDriverWait wait = new WebDriverWait(driver, 25);
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Photo']")));
-        WebElement element = driver.findElement(By.xpath("//a[text()='Photo']"));
+        //Thread.sleep(5000);
+        WebElement element = driver.findElement(By.id(HomePageFile.getDataHomePage().getMenu()));
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
         action.click().build().perform();
 
         String actualPage = driver.getCurrentUrl();
-        String expectedPage = "https://www.costco.com/photo.html";
+        String expectedPage = HomePageFile.getDataHomePage().getUrl();
         assertEquals(actualPage, expectedPage);
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(CheckingLinkToPhotoCategoryTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        driver.close();
-
     }
+
+//    @Test
+//    public void testCheckingLinkToPhotoCategory() throws InterruptedException {
+//        driver.get("https://www.costco.com/");
+//        driver.manage().window().maximize();
+//
+//        Thread.sleep(5000);
+////        WebDriverWait wait = new WebDriverWait(driver, 25);
+////        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Photo']")));
+//        WebElement element = driver.findElement(By.xpath("//a[text()='Photo']"));
+//        Actions action = new Actions(driver);
+//        action.moveToElement(element).build().perform();
+//        action.click().build().perform();
+//
+//        String actualPage = driver.getCurrentUrl();
+//        String expectedPage = "https://www.costco.com/photo.html";
+//        assertEquals(actualPage, expectedPage);
+//
+//        try {
+//            Thread.sleep(2000);
+//        } catch (InterruptedException ex) {
+//            Logger.getLogger(CheckingLinkToPhotoCategoryTest.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        driver.close();
+//
+//    }
 
 }

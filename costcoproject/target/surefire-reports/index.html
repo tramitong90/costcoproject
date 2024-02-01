@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.CheckingLinkToPhotoCategoryTest" class="method navigator-link" hash-for-method="testCheckingLinkToPhotoCategory">testCheckingLinkToPhotoCategory</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.ListOfProductInMeatSeafoodTest" class="method navigator-link" hash-for-method="testAddToListButton">testAddToListButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.ListOfProductInMeatSeafoodTest" class="method navigator-link" hash-for-method="testQuickViewPopup">testQuickViewPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.ListOfProductInMeatSeafoodTest" class="method navigator-link" hash-for-method="testSelectingItem">testSelectingItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -119,14 +129,28 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.com.CheckingLinkToPhotoCategoryTest</span>
+              <span class="class-name">test.com.ListOfProductInMeatSeafoodTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCheckingLinkToPhotoCategory">
-                  </a> <!-- testCheckingLinkToPhotoCategory -->
-                  <span class="method-name">testCheckingLinkToPhotoCategory</span>
+                  <a name="testAddToListButton">
+                  </a> <!-- testAddToListButton -->
+                  <span class="method-name">testAddToListButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testQuickViewPopup">
+                  </a> <!-- testQuickViewPopup -->
+                  <span class="method-name">testQuickViewPopup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectingItem">
+                  </a> <!-- testSelectingItem -->
+                  <span class="method-name">testSelectingItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,7 +166,7 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test name=&quot;Surefire test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.com.CheckingLinkToPhotoCategoryTest&quot;/&gt;
+      &lt;class name=&quot;test.com.ListOfProductInMeatSeafoodTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -182,16 +206,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCheckingLinkToPhotoCategory')
-data.setCell(0, 2, 'test.com.CheckingLinkToPhotoCategoryTest')
-data.setCell(0, 3, 13779);
+data.setCell(0, 1, 'testAddToListButton')
+data.setCell(0, 2, 'test.com.ListOfProductInMeatSeafoodTest')
+data.setCell(0, 3, 22408);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSelectingItem')
+data.setCell(1, 2, 'test.com.ListOfProductInMeatSeafoodTest')
+data.setCell(1, 3, 6653);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testQuickViewPopup')
+data.setCell(2, 2, 'test.com.ListOfProductInMeatSeafoodTest')
+data.setCell(2, 3, 4567);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -217,26 +249,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.com.CheckingLinkToPhotoCategoryTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.com.ListOfProductInMeatSeafoodTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCheckingLinkToPhotoCategory</span>
-                <span class="method-start">2460 ms</span>
+                <span class="method-name">testQuickViewPopup</span>
+                <span class="method-start">7760 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod</span>
-                <span class="method-start">16239 ms</span>
+                <span class="method-start">12327 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">15222 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddToListButton</span>
+                <span class="method-start">21948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">44356 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">46447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSelectingItem</span>
+                <span class="method-start">53234 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">59888 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">16437 ms</span>
+                <span class="method-start">62035 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

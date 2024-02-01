@@ -2,7 +2,6 @@ test\com\RemoveFromCartTest.class
 test\com\SigninTest.class
 test\com\SaveForLaterTest.class
 test\com\LogIn.class
-test\com\ListOfProduct_QuickViewTest.class
 test\com\PagesByCategoryFilterInGroceryTest.class
 test\com\ShoppingCartTest.class
 test\com\ListOfProductInMeatSeafoodTest.class
@@ -12,4 +11,3 @@ test\com\BestSellersInMeatSeaFoodSectionTest.class
 test\com\CheckingLinkToPhotoCategoryTest.class
 test\com\TravelTest.class
 test\com\SectionInMeatSeaFoodPageTest.class
-test\com\EmptyCartCheckoutTest.class
