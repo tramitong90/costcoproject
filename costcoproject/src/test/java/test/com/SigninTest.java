@@ -62,6 +62,7 @@ public class SigninTest {
     @Test
     public void TestSignin() throws Exception {
         driver.get("https://www.costco.com");
+        Thread.sleep(5000);
 //        WebDriverWait wait0 = new WebDriverWait(driver, 25);  //20 sec
 //        wait0.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Sign In / Register']")));
         WebElement signinLink = driver.findElement(By.xpath("//a[text()='Sign In / Register']"));

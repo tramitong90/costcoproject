@@ -62,10 +62,11 @@ public class CheckingLinkToPhotoCategoryTest {
     }
     
     @Test
-    public void testCheckingLinkToPhotoCategory() {//*[@id="crumbs_ul"]/li[2]/span
+    public void testCheckingLinkToPhotoCategory() throws InterruptedException {//*[@id="crumbs_ul"]/li[2]/span
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
         
+        Thread.sleep(5000);
 //        WebDriverWait wait = new WebDriverWait(driver, 25);
 //        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Photo']")));
         WebElement element = driver.findElement(By.xpath("//a[text()='Photo']"));

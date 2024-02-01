@@ -65,7 +65,7 @@ public class ListOfProduct_QuickViewTest {
         
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,2000)", "");
-        
+        Thread.sleep(5000);
         WebElement element = driver.findElement(By.xpath("//*[@id=\"productTile_4000149679\"]/div[2]/div[1]/div/div"));
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
