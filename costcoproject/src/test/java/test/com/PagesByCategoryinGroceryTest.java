@@ -39,9 +39,9 @@ public class PagesByCategoryinGroceryTest {
     @BeforeClass
     public void setUpClass() throws Exception {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        driver = new ChromeDriver(options);
+ //       ChromeOptions options = new ChromeOptions();
+//        options.addArguments("headless");
+        driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
         driver.manage().window().maximize();
         driver.get("https://www.costco.com/meat.html");

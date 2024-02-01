@@ -40,9 +40,9 @@ public class SaveForLaterTest {
     @BeforeClass
     public void setUpClass() throws Exception {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        driver = new ChromeDriver(options);
+ //       ChromeOptions options = new ChromeOptions();
+//        options.addArguments("headless");
+        driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
         driver.manage().window().maximize();
         driver.get("https://www.costco.com/great-southern-grass-fed-beef%2c-all-natural%2c-antibiotic-free%2c-ribeye-steaks%2c-1412-oz.-each-steak%2c-14-total-packs%2c-10.5-lbs.-total.product.100229389.html");

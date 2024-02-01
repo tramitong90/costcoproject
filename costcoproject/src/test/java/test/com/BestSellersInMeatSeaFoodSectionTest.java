@@ -47,9 +47,9 @@ public class BestSellersInMeatSeaFoodSectionTest {
     @BeforeMethod
     public void setUpMethod() throws Exception {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        driver = new ChromeDriver(options);
+ //       ChromeOptions options = new ChromeOptions();
+//        options.addArguments("headless");
+        driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();

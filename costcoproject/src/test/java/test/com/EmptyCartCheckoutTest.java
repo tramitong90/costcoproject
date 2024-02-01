@@ -45,9 +45,9 @@ public class EmptyCartCheckoutTest {
     @BeforeMethod
     public void setUpMethod() throws Exception {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        driver = new ChromeDriver(options);
+ //       ChromeOptions options = new ChromeOptions();
+//        options.addArguments("headless");
+        driver = new ChromeDriver();
         baseUrl = "https://www.google.com/";
     }
 
