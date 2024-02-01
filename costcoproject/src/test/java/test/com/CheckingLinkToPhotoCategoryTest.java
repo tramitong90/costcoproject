@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,7 +26,6 @@ import org.testng.annotations.Test;
  *
  * @author mitra
  */
-
 public class CheckingLinkToPhotoCategoryTest {
 
     private WebDriver driver;
@@ -50,7 +50,9 @@ public class CheckingLinkToPhotoCategoryTest {
     @BeforeMethod
     public void setUpMethod() throws Exception {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        driver = new ChromeDriver(options);
         baseUrl = "https://www.google.com/";
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
@@ -58,14 +60,14 @@ public class CheckingLinkToPhotoCategoryTest {
     @AfterMethod
     public void tearDownMethod() throws Exception {
         driver.quit();
-        
+
     }
-    
+
     @Test
     public void testCheckingLinkToPhotoCategory() throws InterruptedException {//*[@id="crumbs_ul"]/li[2]/span
         driver.get("https://www.costco.com/");
         driver.manage().window().maximize();
-        
+
         Thread.sleep(5000);
 //        WebDriverWait wait = new WebDriverWait(driver, 25);
 //        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Photo']")));
@@ -73,18 +75,18 @@ public class CheckingLinkToPhotoCategoryTest {
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
         action.click().build().perform();
-    
+
         String actualPage = driver.getCurrentUrl();
         String expectedPage = "https://www.costco.com/photo.html";
         assertEquals(actualPage, expectedPage);
-        
+
         try {
             Thread.sleep(2000);
         } catch (InterruptedException ex) {
             Logger.getLogger(CheckingLinkToPhotoCategoryTest.class.getName()).log(Level.SEVERE, null, ex);
         }
         driver.close();
-        
+
     }
 
 }
