@@ -101,9 +101,11 @@ public class ListOfProductInMeatSeafoodTest {
         js.executeScript("window.scrollBy(0,2000)", "");
         Thread.sleep(2000);
         WebElement element = driver.findElement(By.xpath("//*[@id=\"productTile_4000149679\"]/div[2]/div[1]/div/div"));
-        Actions action = new Actions(driver);
-        action.moveToElement(element).build().perform();
-        action.click().build().perform();
+//        Actions action = new Actions(driver);
+//        action.moveToElement(element).build().perform();
+//        action.click().build().perform();
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element);
         
         Thread.sleep(2000);
         WebDriverWait wait1 =new WebDriverWait(driver, 25);

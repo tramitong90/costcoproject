@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -71,9 +72,12 @@ public class CheckingLinkToPhotoCategoryTest {
 
         //Thread.sleep(5000);
         WebElement element = driver.findElement(By.id(HomePageFile.getDataHomePage().getMenu()));
-        Actions action = new Actions(driver);
-        action.moveToElement(element).build().perform();
-        action.click().build().perform();
+//        Actions action = new Actions(driver);
+//        action.moveToElement(element).build().perform();
+//        action.click().build().perform();
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element);
+
 
         String actualPage = driver.getCurrentUrl();
         String expectedPage = HomePageFile.getDataHomePage().getUrl();

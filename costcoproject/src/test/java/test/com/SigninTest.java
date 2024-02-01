@@ -8,6 +8,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -50,7 +51,7 @@ public class SigninTest {
     @BeforeMethod
     public void setUpMethod() throws Exception {
         System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
- //       ChromeOptions options = new ChromeOptions();
+        //       ChromeOptions options = new ChromeOptions();
 //        options.addArguments("headless");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -69,9 +70,12 @@ public class SigninTest {
 //        WebDriverWait wait0 = new WebDriverWait(driver, 25);  //20 sec
 //        wait0.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Sign In / Register']")));
         WebElement signinLink = driver.findElement(By.xpath("//a[text()='Sign In / Register']"));
-        Actions action = new Actions(driver);
-        action.moveToElement(signinLink).build().perform();
-        action.click().build().perform();
+//        Actions action = new Actions(driver);
+//        action.moveToElement(signinLink).build().perform();
+//        action.click().build().perform();
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", signinLink);
+        signinLink.click();
         driver.navigate().to("https://www.costco.com/LogonForm");
         driver.findElement(By.id("signInName")).click();
         driver.findElement(By.id("signInName")).sendKeys(FileUtil.ReadLogin().getUsername());
